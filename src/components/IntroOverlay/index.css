@@ -1,0 +1,47 @@
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: url("../../assets/wedding-card/ImgBgWedding.jpg") center/cover
+    no-repeat;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.intro-content {
+  text-align: center;
+  color: white;
+}
+
+.intro-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro-subtitle {
+  font-size: 1.5rem;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

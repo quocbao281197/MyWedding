@@ -1,0 +1,1 @@
+const n=[{name:"An Vy",wish:"Chúc hai bạn trăm năm hạnh phúc, mãi bền vững!"},{name:"Minh Khoa",wish:"Chúc mừng ngày vui lớn, luôn yêu thương và sẻ chia!"},{name:"Lan Anh",wish:"Chúc hai bạn một khởi đầu đẹp và ngập tràn tiếng cười."}];export{n as default};
