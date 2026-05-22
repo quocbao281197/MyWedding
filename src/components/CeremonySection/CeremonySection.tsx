@@ -1,5 +1,3 @@
-import React from "react";
-
 type CeremonySectionProps = {
   ceremonyTime?: string;
   englishTime?: string;

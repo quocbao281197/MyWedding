@@ -1,5 +1,3 @@
-import React from "react";
-
 type FamilySectionProps = {
   brideFather?: string;
   brideMother?: string;
