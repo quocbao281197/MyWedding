@@ -8,19 +8,19 @@ type WeddingSaveTheDateProps = {
 export default function WeddingSaveTheDate({
   title = "QUYẾT ĐỊNH BÊN NHAU TRỌN ĐỜI.",
   subtitle = "Together, for a Lifetime.",
-  date = "29.11.2025",
+  date = "29.11.2026",
   imageUrl = "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop",
 }: WeddingSaveTheDateProps) {
   return (
     <div
       style={{
         width: "100%",
-        minHeight: "100vh",
+        minHeight: "85vh",
         background: "#FFFFFF",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "20px 10px",
+        padding: "10px 10px",
         boxSizing: "border-box",
         fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
         color: "rgb(127, 100, 67)"
