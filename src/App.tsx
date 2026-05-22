@@ -1,4 +1,4 @@
-import { Button, Col, ConfigProvider } from "antd";
+import { Button, Col, ConfigProvider, Timeline } from "antd";
 import {
   useCallback,
   useEffect,
@@ -18,10 +18,16 @@ import IntroMessage from "./components/IntroMessage";
 import IntroOverlay from "./components/IntroOverlay";
 import ListWishes from "./components/ListWishes/ListWishes";
 import MoneyBoxModal from "./components/MoneyBoxModal";
-import QrCode from "./components/QrCode";
+// import QrCode from "./components/QrCode";
 import ThankYouCard from "./components/ThankYouCard/ThankYouCard";
 import TimeWeddingCountdown from "./components/TimeWeddingCountdown";
 import WeddingAlbum from "./components/WeddingAlbum/WeddingAlbum";
+import WeddingCalendar from "./components/WeddingCalendar/WeddingCalendar";
+import WeddingSaveTheDate from "./components/WeddingSaveTheDate/WeddingSaveTheDate";
+import { FamilySection } from "./components/FamilySection/FamilySection";
+import { CeremonySection } from "./components/CeremonySection/CeremonySection";
+import WeddingHero from "./components/WeddingHero/WeddingHero";
+import WeddingTimeline from "./components/WeddingTimeline/WeddingTimeline";
 
 function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -189,12 +195,40 @@ function App() {
         </div>
         <HeartRain isShown />
         <TimeWeddingCountdown />
-        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+        {/* <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
           <Introduce />
+        </div> */}
+        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+            <WeddingSaveTheDate
+              title="QUYẾT ĐỊNH BÊN NHAU TRỌN ĐỜI."
+              subtitle="Together, for a Lifetime."
+              date="29.11.2025"
+              imageUrl="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop"
+            />
         </div>
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
-          <Event />
+          <WeddingCalendar
+            year={2026}
+            month={10}
+            specialDay={29}
+          />
         </div>
+        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+          <WeddingHero />
+        </div>
+        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+          <FamilySection />
+        </div>
+        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+          <CeremonySection />
+        </div>
+        <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+          <WeddingTimeline />
+        </div>
+
+        {/* <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
+          <Event />
+        </div> */}
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
           <WeddingAlbum />
         </div>
@@ -213,9 +247,9 @@ function App() {
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
           <ThankYouCard />
         </div>
-        <div className="flex flex-row justify-center items-center w-full h-auto relative overflow-visible py-10 px-4 sm:px-6 lg:px-20">
+        {/* <div className="flex flex-row justify-center items-center w-full h-auto relative overflow-visible py-10 px-4 sm:px-6 lg:px-20">
           <QrCode />
-        </div>
+        </div> */}
         <Button
           type="primary"
           className="scroll-to-top"

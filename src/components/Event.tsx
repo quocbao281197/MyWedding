@@ -159,20 +159,20 @@ function Event() {
           }}
           className="italic text-lg sm:text-xl md:text-2xl"
         >
-          Sự kiện cưới
+          Thân mời tới dự lễ cưới thân mật <br></br> của chúng em/chúng con
         </Typography.Title>
         <div className="flex flex-row items-center justify-center gap-4 mt-4 mb-4 w-full max-w-md">
           <div className="flex-grow h-0.5 bg-white rounded-2xl" />
           <ReactSVG src={IcHeart} className="w-6 h-6 text-pink-500" />
           <div className="flex-grow h-0.5 bg-white rounded-2xl" />
         </div>
-        <Typography.Text
+        {/* <Typography.Text
           className="text-white text-base sm:text-lg max-w-md"
           style={{ color: "#ffffff", fontWeight: 700 }}
         >
           ...tình yêu không phải là nhìn vào nhau, mà là nhìn về chung một
           hướng...
-        </Typography.Text>
+        </Typography.Text> */}
         <div className="mt-8 w-full flex flex-wrap justify-center items-stretch gap-2">
           {listData.map((item) => (
             <div key={item.id} data-aos="zoom-in">
