@@ -202,7 +202,7 @@ function App() {
             <WeddingSaveTheDate
               title="QUYẾT ĐỊNH BÊN NHAU TRỌN ĐỜI."
               subtitle="Together, for a Lifetime."
-              date="29.11.2025"
+              date="29.11.2026"
               imageUrl="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop"
             />
         </div>
