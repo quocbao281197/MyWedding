@@ -1,5 +1,3 @@
-import React from "react";
-
 type WeddingSaveTheDateProps = {
   title?: string;
   subtitle?: string;

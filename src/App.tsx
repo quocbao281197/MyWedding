@@ -1,4 +1,4 @@
-import { Button, Col, ConfigProvider, Timeline } from "antd";
+import { Button, Col, ConfigProvider } from "antd";
 import {
   useCallback,
   useEffect,
@@ -11,9 +11,9 @@ import { Sound } from "./assets";
 import { HeartRain, PlayBackAudio } from "./components";
 import AutoScrollMobile from "./components/AutoScrollMobile";
 import ConfirmInvitation from "./components/ConfirmInvitation";
-import Event from "./components/Event";
+// import Event from "./components/Event";
 import GuestbookForm from "./components/GuestBook";
-import Introduce from "./components/Introduce";
+// import Introduce from "./components/Introduce";
 import IntroMessage from "./components/IntroMessage";
 import IntroOverlay from "./components/IntroOverlay";
 import ListWishes from "./components/ListWishes/ListWishes";

@@ -1,5 +1,3 @@
-import React from "react";
-
 const DAYS = ["MON", "TUE", "WED", "THUR", "FRI", "SAT", "SUN"];
 
 type WeddingCalendarProps = {

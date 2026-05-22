@@ -1,5 +1,3 @@
-import React from "react";
-
 type WeddingHeroProps = {
   brideName?: string;
   groomName?: string;
