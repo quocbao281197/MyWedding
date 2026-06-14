@@ -100,10 +100,14 @@ function TimeWeddingCountdown() {
 
   // Responsive font sizes (clamp for mobile -> desktop)
   const titleStyle: React.CSSProperties = {
-    color: "white",
-    fontFamily: "Great Vibes",
+    fontFamily: "'Great Vibes', cursive",
     fontSize: "clamp(2rem, 5vw, 4rem)",
-    lineHeight: 1,
+    lineHeight: 1.2,
+    fontWeight: "bold",
+    background: "linear-gradient(135deg, #e5c07b 0%, #b8975e 50%, #94743c 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    filter: "drop-shadow(2px 2px 3px rgba(40, 30, 15, 0.5))",
   };
 
   const numberStyle: React.CSSProperties = {
@@ -182,7 +186,7 @@ function TimeWeddingCountdown() {
               {imageLoaded ? (
                 <Typography.Title
                   level={1}
-                  className="text-white font-[Great_Vibes] font-extrabold leading-tight mt-28"
+                  className="leading-tight mt-28"
                   style={titleStyle}
                 >
                   Mai Anh

@@ -113,7 +113,7 @@ export default function WeddingTimeline({
               <div
                 style={{
                   minWidth: "120px",
-                  fontSize: "42px",
+                  fontSize: "25px",
                   fontWeight: 600,
                   fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
                   color: "rgb(127, 100, 67)",

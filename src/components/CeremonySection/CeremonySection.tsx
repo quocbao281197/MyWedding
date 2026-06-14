@@ -19,8 +19,8 @@ export function CeremonySection({
   date = "29",
   year = "2026",
   lunarText = "(Lunar date: October 21st, Year of the Snake)",
-  venue = "DIAMON PALACE",
-  hall = "SẢNH GOLD",
+  venue = "DIAMOND PALACE",
+  hall = "Sảnh Gold",
   address = "101 Đường Lý Chiêu Hoàng, Khu V, Bình Phú, Hồ Chí Minh",
 }: CeremonySectionProps) {
   return (
@@ -59,7 +59,7 @@ export function CeremonySection({
         {/* Ceremony Time */}
         <div
           style={{
-            fontSize: "30px",
+            fontSize: "clamp(1.1rem, 3.5vw, 1.8rem)",
             lineHeight: 1.6,
             textTransform: "uppercase",
             fontWeight: 500,
@@ -71,7 +71,7 @@ export function CeremonySection({
         <div
           style={{
             marginTop: "26px",
-            fontSize: "25px",
+            fontSize: "clamp(0.85rem, 2.5vw, 1.25rem)",
             textTransform: "uppercase",
             letterSpacing: "1px",
           }}
@@ -83,7 +83,7 @@ export function CeremonySection({
         <div
           style={{
             marginTop: "60px",
-            fontSize: "30px",
+            fontSize: "clamp(1.1rem, 3.5vw, 1.8rem)",
             textTransform: "uppercase",
           }}
         >
@@ -97,13 +97,13 @@ export function CeremonySection({
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "40px",
-            flexWrap: "wrap",
+            gap: "clamp(12px, 3.5vw, 30px)",
+            flexWrap: "nowrap",
           }}
         >
           <div
             style={{
-              fontSize: "30px",
+              fontSize: "clamp(1rem, 3vw, 1.6rem)",
               lineHeight: 1.6,
               whiteSpace: "pre-line",
             }}
@@ -113,7 +113,7 @@ export function CeremonySection({
 
           <div
             style={{
-              fontSize: "90px",
+              fontSize: "clamp(2.5rem, 8vw, 5rem)",
               fontWeight: 500,
               lineHeight: 1,
             }}
@@ -123,7 +123,7 @@ export function CeremonySection({
 
           <div
             style={{
-              fontSize: "90px",
+              fontSize: "clamp(2.5rem, 8vw, 5rem)",
             }}
           >
             {year}
@@ -155,7 +155,7 @@ export function CeremonySection({
         <div
           style={{
             marginTop: "20px",
-            fontSize: "40px",
+            fontSize: "27px",
             fontWeight: 600,
             textTransform: "uppercase",
           }}
@@ -166,7 +166,7 @@ export function CeremonySection({
         <div
           style={{
             marginTop: "5px",
-            fontSize: "30px",
+            fontSize: "25px",
             textTransform: "uppercase",
           }}
         >
@@ -177,11 +177,47 @@ export function CeremonySection({
         <div
           style={{
             marginTop: "5px",
-            fontSize: "30px",
+            fontSize: "25px",
             lineHeight: 1.8,
           }}
         >
           {address}
+        </div>
+
+        {/* Chỉ đường */}
+        <div style={{ marginTop: "25px" }}>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Diamond+Palace+101+Lý+Chiêu+Hoàng+Quận+6"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "12px 30px",
+              backgroundColor: "#b8975e",
+              color: "#fff",
+              borderRadius: "30px",
+              fontSize: "22px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              letterSpacing: "0.5px",
+              boxShadow: "0 4px 12px rgba(184, 151, 94, 0.3)",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "#94743c";
+              e.currentTarget.style.boxShadow = "0 6px 16px rgba(184, 151, 94, 0.5)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "#b8975e";
+              e.currentTarget.style.boxShadow = "0 4px 12px rgba(184, 151, 94, 0.3)";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
+          >
+            📍 Chỉ đường
+          </a>
         </div>
       </div>
     </div>
