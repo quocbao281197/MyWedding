@@ -23,16 +23,7 @@ export function FamilySection({
       }}
     >
       <div
-        style={{
-          width: "100%",
-          maxWidth: "1000px",
-        //   border: "1px solid #e5e5e5",
-          padding: "50px 40px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1px 1fr",
-          alignItems: "center",
-          background: "#fff",
-        }}
+        className="w-full max-w-[1000px] py-12 px-4 sm:px-10 grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] items-center bg-white gap-8 md:gap-0"
       >
         {/* Bride Family */}
         <div
@@ -40,12 +31,12 @@ export function FamilySection({
             textAlign: "center",
             fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
             color: "rgb(127, 100, 67)",
-            padding: "0 30px",
+            padding: "0 10px",
           }}
         >
           <div
             style={{
-              fontSize: "25px",
+              fontSize: "clamp(1.2rem, 3.5vw, 1.6rem)",
               fontWeight: 600,
               textTransform: "uppercase",
               lineHeight: 1.5,
@@ -56,7 +47,7 @@ export function FamilySection({
 
           <div
             style={{
-              fontSize: "25px",
+              fontSize: "clamp(1rem, 3vw, 1.3rem)",
               marginTop: "8px",
               textTransform: "uppercase",
             }}
@@ -67,8 +58,8 @@ export function FamilySection({
           <div
             style={{
               marginTop: "20px",
-              fontSize: "20px",
-              lineHeight: 2,
+              fontSize: "clamp(0.95rem, 2.8vw, 1.25rem)",
+              lineHeight: 1.8,
             }}
           >
             <div>{brideFather}</div>
@@ -77,13 +68,16 @@ export function FamilySection({
         </div>
 
         {/* Divider */}
-        <div
-          style={{
-            width: "1px",
-            height: "100%",
-            background: "#999",
-          }}
-        />
+        <>
+          <div className="h-[1px] w-full bg-[#999]/30 md:hidden" />
+          <div
+            className="hidden md:block bg-[#999]"
+            style={{
+              width: "1px",
+              height: "100%",
+            }}
+          />
+        </>
 
         {/* Groom Family */}
         <div
@@ -91,12 +85,12 @@ export function FamilySection({
             textAlign: "center",
             fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
             color: "rgb(127, 100, 67)",
-            padding: "0 30px",
+            padding: "0 10px",
           }}
         >
           <div
             style={{
-              fontSize: "25px",
+              fontSize: "clamp(1.2rem, 3.5vw, 1.6rem)",
               fontWeight: 600,
               textTransform: "uppercase",
               lineHeight: 1.5,
@@ -107,7 +101,7 @@ export function FamilySection({
 
           <div
             style={{
-              fontSize: "25px",
+              fontSize: "clamp(1rem, 3vw, 1.3rem)",
               marginTop: "8px",
               textTransform: "uppercase",
             }}
@@ -117,9 +111,9 @@ export function FamilySection({
 
           <div
             style={{
-              marginTop: "30px",
-              fontSize: "20px",
-              lineHeight: 2,
+              marginTop: "20px",
+              fontSize: "clamp(0.95rem, 2.8vw, 1.25rem)",
+              lineHeight: 1.8,
             }}
           >
             <div>{groomFather}</div>

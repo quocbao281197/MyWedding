@@ -25,8 +25,8 @@ const listData = [
     timeWelcome: "07:00",
     timeEvent: "08:00",
     dateEvent: "Thứ bảy, 28.11.2026",
-    latitude: 10.5848,
-    longitude: 105.50692,
+    latitude: 10.7645,
+    longitude: 106.6475,
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const listData = [
     timeWelcome: "08:00",
     timeEvent: "09:00",
     dateEvent: "Thứ bảy, 28.11.2026",
-    latitude: 10.80767,
-    longitude: 106.46492,
+    latitude: 10.7525,
+    longitude: 106.6445,
   },
   {
     id: 4,
@@ -47,8 +47,8 @@ const listData = [
     timeWelcome: "11:00",
     timeEvent: "12:00",
     dateEvent: "Chủ nhật, 29.11.2026",
-    latitude: 10.81931621520912,
-    longitude: 106.70107302310292,
+    latitude: 10.7485,
+    longitude: 106.6345,
   },
 ];
 
@@ -84,12 +84,12 @@ const CardEvent = ({
           <Typography.Text className="block text-gray-300 text-sm">
             {data?.placeEventAddress}
           </Typography.Text>
-          <div className="mt-4 space-y-2 text-white text-sm sm:text-base">
-            <Typography.Text>🕰️ Đón khách: {data?.timeWelcome}</Typography.Text>
+          <div className="mt-4 space-y-2 text-white" style={{ fontSize: "12px" }}>
+            <span>🕰️ Đón khách: {data?.timeWelcome}</span>
             <br />
-            <Typography.Text>🍽️ Khai tiệc: {data?.timeEvent}</Typography.Text>
+            <span>🍽️ Khai tiệc: {data?.timeEvent}</span>
             <br />
-            <Typography.Text>📅 {data?.dateEvent}</Typography.Text>
+            <span>📅 {data?.dateEvent}</span>
           </div>
           <button
             onClick={onOpenMap}
