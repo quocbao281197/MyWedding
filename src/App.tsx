@@ -10,13 +10,10 @@ import "./App.css";
 import { Sound } from "./assets";
 import { HeartRain, PlayBackAudio } from "./components";
 import ConfirmInvitation from "./components/ConfirmInvitation";
-// import Event from "./components/Event";
 import GuestbookForm from "./components/GuestBook";
-// import Introduce from "./components/Introduce";
 import IntroMessage from "./components/IntroMessage";
 import ListWishes from "./components/ListWishes/ListWishes";
 import MoneyBoxModal from "./components/MoneyBoxModal";
-// import QrCode from "./components/QrCode";
 import ThankYouCard from "./components/ThankYouCard/ThankYouCard";
 import TimeWeddingCountdown from "./components/TimeWeddingCountdown";
 import WeddingAlbum from "./components/WeddingAlbum/WeddingAlbum";
@@ -42,10 +39,10 @@ function App() {
       if (!audio) return;
   
       try {
-        audio.muted = false; // đảm bảo không bị muted
+        audio.muted = false;
         await audio.play();
       } catch (err) {
-        console.warn('Autoplay blocked, waiting user click');
+        console.warn("Autoplay blocked, waiting user click");
       }
   
       window.removeEventListener('pointerdown', onFirstInteraction);
@@ -133,7 +130,6 @@ function App() {
           <ThankYouCard />
         </div>
 
-        {/* Floating gift button for Money Box */}
         <button
           onClick={toggleModal}
           title="Hộp mừng cưới"

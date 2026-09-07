@@ -8,32 +8,20 @@ type WeddingCalendarProps = {
 
 export default function WeddingCalendar({
   year = 2026,
-  month = 10, // November
+  month = 10,
   specialDay = 29,
 }: WeddingCalendarProps) {
-  // First day of month
   const firstDay = new Date(year, month, 1).getDay();
-
-  // Convert Sunday=0 -> Sunday last
   const startIndex = firstDay === 0 ? 6 : firstDay - 1;
-
-  // Total days
   const totalDays = new Date(year, month + 1, 0).getDate();
-
-  // Month name
   const monthName = new Date(year, month).toLocaleString("en-US", {
     month: "long",
   });
 
-  // Generate calendar
   const calendarDays: (number | null)[] = [];
-
-  // Empty cells
   for (let i = 0; i < startIndex; i++) {
     calendarDays.push(null);
   }
-
-  // Dates
   for (let i = 1; i <= totalDays; i++) {
     calendarDays.push(i);
   }
@@ -53,7 +41,6 @@ export default function WeddingCalendar({
         boxSizing: "border-box",
       }}
     >
-      {/* Month */}
       <div
         style={{
           textAlign: "center",
@@ -67,7 +54,6 @@ export default function WeddingCalendar({
         {monthName}
       </div>
 
-      {/* Week Days */}
       <div
         style={{
           display: "grid",
@@ -84,7 +70,6 @@ export default function WeddingCalendar({
         ))}
       </div>
 
-      {/* Dates */}
       <div
         style={{
           display: "grid",

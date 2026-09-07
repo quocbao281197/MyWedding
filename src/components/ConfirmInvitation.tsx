@@ -58,7 +58,6 @@ const ConfirmInvitation = () => {
       message.success("Cảm ơn bạn đã xác nhận!");
       form.resetFields();
     } catch (error) {
-      // log the error for debugging while preserving user-facing message
       console.error(error);
       message.error("Có lỗi xảy ra. Vui lòng thử lại.");
     } finally {

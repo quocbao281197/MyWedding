@@ -32,7 +32,6 @@ export default function WeddingHero({
           textAlign: "center",
         }}
       >
-        {/* Top Text */}
         <div
           style={{
             color: "#8b6b47",
@@ -60,7 +59,6 @@ export default function WeddingHero({
           WE CORDIALLY INVITE YOU TO CELEBRATE OUR WEDDING
         </div>
 
-        {/* Names */}
         <div
           style={{
             marginTop: "60px",
@@ -100,7 +98,6 @@ export default function WeddingHero({
           </div>
         </div>
 
-        {/* Images */}
         <div
           style={{
             marginTop: "70px",
@@ -111,7 +108,6 @@ export default function WeddingHero({
             flexWrap: "wrap",
           }}
         >
-          {/* Left Photo */}
           <div
             style={{
               width: "320px",
@@ -142,7 +138,6 @@ export default function WeddingHero({
             />
           </div>
 
-          {/* Right Photo */}
           <div
             style={{
               width: "320px",

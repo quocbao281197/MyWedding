@@ -29,7 +29,6 @@ export function FamilySection({
           outlineOffset: "-10px",
         }}
       >
-        {/* Bride Family */}
         <div
           style={{
             textAlign: "center",
@@ -74,7 +73,6 @@ export function FamilySection({
           </div>
         </div>
 
-        {/* Divider */}
         <>
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#e5c07b]/60 to-transparent md:hidden" />
           <div
@@ -87,7 +85,6 @@ export function FamilySection({
           />
         </>
 
-        {/* Groom Family */}
         <div
           style={{
             textAlign: "center",

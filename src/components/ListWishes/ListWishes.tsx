@@ -2,7 +2,7 @@ import { Typography, Avatar, Button, Spin } from "antd";
 import { useCallback, useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./index.css"; // Ensure this includes .no-scrollbar CSS
+import "./index.css";
 import { useS } from "use-s-react";
 import { ReactSVG } from "react-svg";
 import { IcLeft, IcRight } from "../../assets";
@@ -241,11 +241,10 @@ const ListWishes = () => {
 
       <div className="flex flex-row items-center justify-center w-full">
         <div className="w-full max-w-screen-md mx-auto px-0 sm:px-2 relative min-h-[120px] sm:min-h-[150px] md:min-h-[160px] flex items-center justify-center">
-          {/* Prev button - overlay on mobile, static on md+ */}
           <Button
             type="text"
             aria-label="Previous wish"
-            onClick={handlePrev} // prettier-ignore
+            onClick={handlePrev}
             className="absolute left-2 sm:left-2 top-1/2 -translate-y-1/2 z-50 w-12 h-12 p-3 bg-white/90 hover:bg-white border border-[#e5c07b]/30 rounded-full flex items-center justify-center shadow-md pointer-events-auto transition-all md:static md:w-10 md:h-10 md:p-1 md:translate-y-0"
           >
             <ReactSVG

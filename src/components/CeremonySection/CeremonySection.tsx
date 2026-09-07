@@ -51,7 +51,6 @@ export function CeremonySection({
           position: "relative",
         }}
       >
-        {/* Flower */}
         <div
           style={{
             fontSize: "40px",
@@ -61,7 +60,6 @@ export function CeremonySection({
           ❀
         </div>
 
-        {/* Ceremony Time */}
         <div
           style={{
             fontSize: "clamp(1.1rem, 3.5vw, 1.8rem)",
@@ -84,7 +82,6 @@ export function CeremonySection({
           {englishTime}
         </div>
 
-        {/* Day */}
         <div
           style={{
             marginTop: "60px",
@@ -95,7 +92,6 @@ export function CeremonySection({
           {dayText}
         </div>
 
-        {/* Date */}
         <div
           style={{
             marginTop: "30px",
@@ -135,7 +131,6 @@ export function CeremonySection({
           </div>
         </div>
 
-        {/* Lunar */}
         <div
           style={{
             marginTop: "6px",
@@ -149,7 +144,6 @@ export function CeremonySection({
           {lunarText}
         </div>
 
-        {/* Rings */}
         <div
           style={{
             marginTop: "12px",
@@ -159,7 +153,6 @@ export function CeremonySection({
           💍
         </div>
 
-        {/* Venue */}
         <div
           style={{
             marginTop: "16px",
@@ -172,7 +165,6 @@ export function CeremonySection({
           {venue}
         </div>
 
-        {/* Hall */}
         <div
           style={{
             marginTop: "6px",
@@ -185,7 +177,6 @@ export function CeremonySection({
           {hall}
         </div>
 
-        {/* Address */}
         <div
           style={{
             marginTop: "8px",
@@ -200,7 +191,6 @@ export function CeremonySection({
           {address}
         </div>
 
-        {/* Chỉ đường */}
         <div style={{ marginTop: "25px" }}>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=Diamond+Palace+101+Lý+Chiêu+Hoàng+Quận+6"

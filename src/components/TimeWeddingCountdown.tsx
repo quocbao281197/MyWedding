@@ -7,12 +7,7 @@ import { ImgWedding01 } from "../assets";
 
 function TimeWeddingCountdown() {
   const targetDates = useMemo(() => {
-    return [
-      // dayjs("2025-10-11T00:00:00"),
-      // dayjs("2025-10-31T00:00:00"),
-      // dayjs("2025-11-01T00:00:00"),
-      dayjs("2026-11-29T00:00:00"),
-    ];
+    return [dayjs("2026-11-29T00:00:00")];
   }, []);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -130,9 +125,7 @@ function TimeWeddingCountdown() {
       const t = setTimeout(() => setTextVisible(true), 500);
       try {
         window.dispatchEvent(new CustomEvent("countdown-image-ready"));
-      } catch {
-        // ignore in non-browser env
-      }
+      } catch {}
       return () => clearTimeout(t);
     }
   }, [imageLoaded]);
@@ -202,7 +195,6 @@ function TimeWeddingCountdown() {
             </SkeletonTheme>
           </div>
         </div>
-        {/* Countdown circles or skeletons */}
         <div className="mt-5 w-full max-w-md px-2">
           <div className="flex justify-center items-center gap-1 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
             {values.map((element, index) => (
@@ -229,7 +221,7 @@ function TimeWeddingCountdown() {
             ))}
           </div>
         </div>
-        {/* Date title or skeleton */}
+
         <div className="mt-6">
           {imageLoaded ? (
             <Typography.Title

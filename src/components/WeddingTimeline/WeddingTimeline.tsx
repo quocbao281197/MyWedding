@@ -25,7 +25,7 @@ export default function WeddingTimeline({
       subtitle: "LỄ THÀNH HÔN / WEDDING CEREMONY",
     },
     {
-      time: "12:15",
+      time: "12:30",
       title:
         "Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR",
       subtitle: "KHAI TIỆC / BANQUET BEGINS",
@@ -56,7 +56,6 @@ export default function WeddingTimeline({
           gap: "60px",
         }}
       >
-        {/* Left Image */}
         <div
           style={{
             position: "relative",
@@ -74,7 +73,6 @@ export default function WeddingTimeline({
             }}
           />
 
-          {/* Timeline Text */}
           <div
             style={{
               position: "absolute",
@@ -92,7 +90,6 @@ export default function WeddingTimeline({
           </div>
         </div>
 
-        {/* Right Timeline */}
         <div
           style={{
             display: "flex",
@@ -109,7 +106,6 @@ export default function WeddingTimeline({
                 gap: "32px",
               }}
             >
-              {/* Time */}
               <div
                 style={{
                   minWidth: "120px",
@@ -122,7 +118,6 @@ export default function WeddingTimeline({
                 {item.time}
               </div>
 
-              {/* Content */}
               <div
                 style={{
                   flex: 1,

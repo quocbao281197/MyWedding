@@ -41,7 +41,6 @@ export default function WeddingSaveTheDate({
           position: "relative",
         }}
       >
-        {/* Title */}
         <div
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
@@ -60,7 +59,6 @@ export default function WeddingSaveTheDate({
             {title}
           </div>
 
-          {/* Subtitle */}
           <div
             style={{
               marginTop: "10px",
@@ -71,7 +69,6 @@ export default function WeddingSaveTheDate({
             {subtitle}
           </div>
 
-          {/* Save the date */}
           <div
             style={{
               marginTop: "20px",
@@ -83,7 +80,6 @@ export default function WeddingSaveTheDate({
             Save the date
           </div>
 
-          {/* Date */}
           <div
             style={{
               marginTop: "5px",
@@ -96,7 +92,6 @@ export default function WeddingSaveTheDate({
           </div>
         </div>
 
-        {/* Image */}
         <div
           style={{
             marginTop: "70px",
