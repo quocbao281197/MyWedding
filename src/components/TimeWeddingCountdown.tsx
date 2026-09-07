@@ -4,10 +4,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { ImgWedding01 } from "../assets";
+import { WEDDING_INFO, THEME } from "../constants";
 
 function TimeWeddingCountdown() {
   const targetDates = useMemo(() => {
-    return [dayjs("2026-11-29T00:00:00")];
+    return [dayjs(WEDDING_INFO.date.iso)];
   }, []);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -83,15 +84,14 @@ function TimeWeddingCountdown() {
     timeLeft.seconds,
   ];
 
-  // Responsive font sizes (clamp for mobile -> desktop)
   const titleStyle: React.CSSProperties = {
-    fontFamily: "'Playfair Display', Georgia, serif",
+    fontFamily: THEME.fonts.serif,
     fontSize: "clamp(2.4rem, 6.5vw, 4.2rem)",
     lineHeight: 1.25,
     fontStyle: "italic",
     fontWeight: 600,
     letterSpacing: "0.02em",
-    background: "linear-gradient(135deg, #FFF8EB 0%, #F5D38E 45%, #D4A34D 100%)",
+    background: THEME.gradients.textGold,
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   };
@@ -109,13 +109,13 @@ function TimeWeddingCountdown() {
   };
 
   const dateStyle: React.CSSProperties = {
-    fontFamily: "'Playfair Display', 'Montserrat', serif",
+    fontFamily: THEME.fonts.serif,
     fontSize: "clamp(1.1rem, 3.2vw, 1.8rem)",
     lineHeight: 1.4,
     fontWeight: 600,
     letterSpacing: "0.18em",
     textTransform: "uppercase",
-    background: "linear-gradient(135deg, #FFF8EB 0%, #F5D38E 45%, #D4A34D 100%)",
+    background: THEME.gradients.textGold,
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   };
@@ -180,10 +180,10 @@ function TimeWeddingCountdown() {
                   className="leading-tight mt-28"
                   style={titleStyle}
                 >
-                  Mai Anh
+                  {WEDDING_INFO.bride.name}
                   <br />
                   <span className="text-[0.75em] block my-1 font-normal opacity-90">&</span>
-                  Quốc Bảo
+                  {WEDDING_INFO.groom.name}
                 </Typography.Title>
               ) : (
                 <div className="mt-8">

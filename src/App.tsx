@@ -8,21 +8,24 @@ import {
 } from "react";
 import "./App.css";
 import { Sound } from "./assets";
-import { HeartRain, PlayBackAudio } from "./components";
-import ConfirmInvitation from "./components/ConfirmInvitation";
-import GuestbookForm from "./components/GuestBook";
-import IntroMessage from "./components/IntroMessage";
-import ListWishes from "./components/ListWishes/ListWishes";
-import MoneyBoxModal from "./components/MoneyBoxModal";
-import ThankYouCard from "./components/ThankYouCard/ThankYouCard";
-import TimeWeddingCountdown from "./components/TimeWeddingCountdown";
-import WeddingAlbum from "./components/WeddingAlbum/WeddingAlbum";
-import WeddingCalendar from "./components/WeddingCalendar/WeddingCalendar";
-import WeddingSaveTheDate from "./components/WeddingSaveTheDate/WeddingSaveTheDate";
-import { FamilySection } from "./components/FamilySection/FamilySection";
-import { CeremonySection } from "./components/CeremonySection/CeremonySection";
-import WeddingHero from "./components/WeddingHero/WeddingHero";
-import WeddingTimeline from "./components/WeddingTimeline/WeddingTimeline";
+import {
+  HeartRain,
+  PlayBackAudio,
+  ConfirmInvitation,
+  GuestbookForm,
+  IntroMessage,
+  ListWishes,
+  MoneyBoxModal,
+  ThankYouCard,
+  TimeWeddingCountdown,
+  WeddingAlbum,
+  WeddingCalendar,
+  WeddingSaveTheDate,
+  FamilySection,
+  CeremonySection,
+  WeddingHero,
+  WeddingTimeline,
+} from "./components";
 
 function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -85,19 +88,10 @@ function App() {
         <HeartRain isShown />
         <TimeWeddingCountdown />
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
-          <WeddingSaveTheDate
-            title="QUYẾT ĐỊNH BÊN NHAU TRỌN ĐỜI."
-            subtitle="Together, for a Lifetime."
-            date="29.11.2026"
-            imageUrl="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop"
-          />
+          <WeddingSaveTheDate />
         </div>
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible py-10 bg-[#faf7f2]">
-          <WeddingCalendar
-            year={2026}
-            month={10}
-            specialDay={29}
-          />
+          <WeddingCalendar />
         </div>
         <div className="flex flex-row justify-center items-center w-screen h-auto relative overflow-visible">
           <WeddingHero />

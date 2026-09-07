@@ -1,3 +1,5 @@
+import { WEDDING_INFO, THEME } from "../../constants";
+
 type CeremonySectionProps = {
   ceremonyTime?: string;
   englishTime?: string;
@@ -12,43 +14,23 @@ type CeremonySectionProps = {
 };
 
 export function CeremonySection({
-  ceremonyTime = "LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC VÀO LÚC 12 GIỜ 00 PHÚT",
-  englishTime = "OUR WEDDING CEREMONY WILL TAKE PLACE AT 12:00 PM",
-  dayText = "CHỦ NHẬT / SUNDAY",
-  monthText = "THÁNG 11\nNOVEMBER",
-  date = "29",
-  year = "2026",
-  lunarText = "(Lunar date: October 21st, Year of the Snake)",
-  venue = "DIAMOND PALACE",
-  hall = "Sảnh Gold",
-  address = "101 Đường Lý Chiêu Hoàng, Khu V, Bình Phú, Hồ Chí Minh",
+  ceremonyTime = WEDDING_INFO.ceremony.ceremonyNoticeVi,
+  englishTime = WEDDING_INFO.ceremony.ceremonyNoticeEn,
+  dayText = WEDDING_INFO.date.dayText,
+  monthText = WEDDING_INFO.date.monthText,
+  date = WEDDING_INFO.date.day,
+  year = WEDDING_INFO.date.year,
+  lunarText = WEDDING_INFO.date.lunarText,
+  venue = WEDDING_INFO.ceremony.venue,
+  hall = WEDDING_INFO.ceremony.hall,
+  address = WEDDING_INFO.ceremony.address,
 }: CeremonySectionProps) {
   return (
-    <div
-      style={{
-        width: "100%",
-        background: "#faf7f2",
-        display: "flex",
-        justifyContent: "center",
-        padding: "30px 16px",
-        boxSizing: "border-box",
-      }}
-    >
+    <div style={THEME.styles.sectionContainer}>
       <div
         style={{
-          width: "100%",
-          maxWidth: "960px",
+          ...THEME.styles.stationeryCard,
           padding: "45px 24px",
-          background: "#ffffff",
-          borderRadius: "24px",
-          border: "1px solid rgba(229, 192, 123, 0.45)",
-          outline: "1px solid rgba(229, 192, 123, 0.2)",
-          outlineOffset: "-10px",
-          boxShadow: "0 16px 40px rgba(127, 100, 67, 0.08)",
-          textAlign: "center",
-          fontFamily: "'Playfair Display', Georgia, serif",
-          color: "rgb(127, 100, 67)",
-          position: "relative",
         }}
       >
         <div

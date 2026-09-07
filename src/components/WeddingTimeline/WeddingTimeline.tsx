@@ -1,3 +1,5 @@
+import { WEDDING_INFO, THEME } from "../../constants";
+
 type TimelineItem = {
   time: string;
   title: string;
@@ -12,37 +14,16 @@ type WeddingTimelineProps = {
 
 export default function WeddingTimeline({
   imageUrl = "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop",
-  timeline = [
-    {
-      time: "11:00",
-      title: "ĐÓN KHÁCH",
-      subtitle: "GUEST RECEPTION",
-    },
-    {
-      time: "12:00",
-      title:
-        "Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR",
-      subtitle: "LỄ THÀNH HÔN / WEDDING CEREMONY",
-    },
-    {
-      time: "12:30",
-      title:
-        "Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR",
-      subtitle: "KHAI TIỆC / BANQUET BEGINS",
-    },
-  ],
+  timeline = WEDDING_INFO.timeline,
 }: WeddingTimelineProps) {
   return (
     <div
       style={{
-        width: "100%",
+        ...THEME.styles.sectionContainer,
         minHeight: "100vh",
-        background: "linear-gradient(180deg, #faf7f2 0%, #f4ede1 50%, #faf7f2 100%)",
-        display: "flex",
-        justifyContent: "center",
+        background: THEME.gradients.bgIvoryVignette,
         alignItems: "center",
         padding: "80px 20px",
-        boxSizing: "border-box",
       }}
     >
       <div

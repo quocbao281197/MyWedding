@@ -1,3 +1,5 @@
+import { WEDDING_INFO, THEME } from "../../constants";
+
 type FamilySectionProps = {
   brideFather?: string;
   brideMother?: string;
@@ -6,22 +8,13 @@ type FamilySectionProps = {
 };
 
 export function FamilySection({
-  brideFather = "Ông/ Mr. Nguyễn Quý Long",
-  brideMother = "Bà/ Mrs. Nguyễn Thị Ngọc Lan",
-  groomFather = "Ông/ Mr. Nguyễn Văn Truyền",
-  groomMother = "Bà/ Mrs. Phạm Thị Phương",
+  brideFather = WEDDING_INFO.bride.father,
+  brideMother = WEDDING_INFO.bride.mother,
+  groomFather = WEDDING_INFO.groom.father,
+  groomMother = WEDDING_INFO.groom.mother,
 }: FamilySectionProps) {
   return (
-    <div
-      style={{
-        width: "100%",
-        background: "#faf7f2",
-        display: "flex",
-        justifyContent: "center",
-        padding: "30px 16px",
-        boxSizing: "border-box",
-      }}
-    >
+    <div style={THEME.styles.sectionContainer}>
       <div
         className="w-full max-w-[960px] py-12 px-6 sm:px-12 grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] items-center bg-white rounded-2xl border border-[#e5c07b]/45 shadow-[0_16px_40px_rgba(127,100,67,0.08)] gap-8 md:gap-0 relative"
         style={{
@@ -32,8 +25,8 @@ export function FamilySection({
         <div
           style={{
             textAlign: "center",
-            fontFamily: "'Playfair Display', Georgia, serif",
-            color: "rgb(127, 100, 67)",
+            fontFamily: THEME.fonts.serif,
+            color: THEME.colors.primaryBronze,
             padding: "0 10px",
           }}
         >

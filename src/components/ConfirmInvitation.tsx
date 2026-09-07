@@ -4,6 +4,7 @@ import { ImgBG } from "../assets";
 import { useS } from "use-s-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { WEDDING_INFO } from "../constants";
 
 const { Title } = Typography;
 
@@ -29,15 +30,8 @@ const ConfirmInvitation = () => {
     });
   }, []);
 
-  const FORM_ID = "1FAIpQLSdGOYUlrGi4yXccmV59ED645X-KuJANTFmaZb4Ry3Xqw1boMw";
-  const GOOGLE_FORM_ACTION = `https://docs.google.com/forms/u/0/d/e/${FORM_ID}/formResponse`;
-
-  const GOOGLE_FORM_FIELDS = {
-    name: "entry.1704380466",
-    attendance: "entry.309234374",
-    quantity: "entry.1442013422",
-    side: "entry.1704380466",
-  };
+  const GOOGLE_FORM_ACTION = WEDDING_INFO.forms.confirmFormAction;
+  const GOOGLE_FORM_FIELDS = WEDDING_INFO.forms.confirmFields;
 
   const handleSubmit = async (values: SubmitValues) => {
     setLoading(true);

@@ -1,3 +1,5 @@
+import { WEDDING_INFO } from "../../constants";
+
 const DAYS = ["MON", "TUE", "WED", "THUR", "FRI", "SAT", "SUN"];
 
 type WeddingCalendarProps = {
@@ -7,9 +9,9 @@ type WeddingCalendarProps = {
 };
 
 export default function WeddingCalendar({
-  year = 2026,
-  month = 10,
-  specialDay = 29,
+  year = Number(WEDDING_INFO.date.year),
+  month = WEDDING_INFO.date.month,
+  specialDay = Number(WEDDING_INFO.date.day),
 }: WeddingCalendarProps) {
   const firstDay = new Date(year, month, 1).getDay();
   const startIndex = firstDay === 0 ? 6 : firstDay - 1;

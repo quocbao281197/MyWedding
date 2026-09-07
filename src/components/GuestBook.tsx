@@ -4,6 +4,7 @@ import { ImgBgFlower } from "../assets";
 import { useS } from "use-s-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { WEDDING_INFO } from "../constants";
 
 const { Title, Text } = Typography;
 
@@ -22,13 +23,8 @@ const GuestbookForm = () => {
     });
   }, []);
 
-  const GOOGLE_FORM_ACTION =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdb2-aKOT-IUM2_mt4mmuJ_JEufxMvWooUl_wuGmojp-OFbIg/formResponse";
-
-  const GOOGLE_FORM_FIELDS = {
-    name: "entry.175920834",
-    wish: "entry.928499893",
-  };
+  const GOOGLE_FORM_ACTION = WEDDING_INFO.forms.guestbookFormAction;
+  const GOOGLE_FORM_FIELDS = WEDDING_INFO.forms.guestbookFields;
 
   const handleSubmit = async (values: any) => {
     setLoading(true);

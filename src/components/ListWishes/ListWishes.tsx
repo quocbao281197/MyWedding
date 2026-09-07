@@ -6,6 +6,7 @@ import "./index.css";
 import { useS } from "use-s-react";
 import { ReactSVG } from "react-svg";
 import { IcLeft, IcRight } from "../../assets";
+import { WEDDING_INFO } from "../../constants";
 
 type Submission = {
   name: string;
@@ -30,7 +31,7 @@ const ListWishes = () => {
   const dragInfo = useRef({ startX: 0, startTranslate: 0 });
   const [currentTranslate, setCurrentTranslate] = useState(0);
 
-  const SHEET_ID = "1y5mD-K-M4ePk5XceoIdS7rk9j6htpPGwxflm_3yV2jI";
+  const SHEET_ID = WEDDING_INFO.forms.guestbookSheetId;
 
   const fetchData = useCallback(async () => {
     const sanitize = (text: string) =>

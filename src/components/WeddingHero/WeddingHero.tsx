@@ -1,3 +1,5 @@
+import { WEDDING_INFO, THEME } from "../../constants";
+
 type WeddingHeroProps = {
   brideName?: string;
   groomName?: string;
@@ -6,23 +8,20 @@ type WeddingHeroProps = {
 };
 
 export default function WeddingHero({
-  brideName = "MAI ANH",
-  groomName = "QUỐC BẢO",
+  brideName = WEDDING_INFO.bride.name.toUpperCase(),
+  groomName = WEDDING_INFO.groom.name.toUpperCase(),
   leftImage = "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
   rightImage = "https://images.unsplash.com/photo-1525258946800-98cfd641d0de?q=80&w=1200&auto=format&fit=crop",
 }: WeddingHeroProps) {
   return (
     <div
       style={{
-        width: "100%",
+        ...THEME.styles.sectionContainer,
         minHeight: "100vh",
-        background: "linear-gradient(180deg, #faf7f2 0%, #f4ede1 50%, #faf7f2 100%)",
-        display: "flex",
-        justifyContent: "center",
+        background: THEME.gradients.bgIvoryVignette,
         alignItems: "center",
         padding: "60px 20px",
-        boxSizing: "border-box",
-        fontFamily: "'Playfair Display', Georgia, serif",
+        fontFamily: THEME.fonts.serif,
       }}
     >
       <div

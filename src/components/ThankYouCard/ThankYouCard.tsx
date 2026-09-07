@@ -1,5 +1,6 @@
 import { Image } from "antd";
 import { Img12 } from "../../assets";
+import { WEDDING_INFO, THEME } from "../../constants";
 
 const ThankYouCard = () => {
   return (
@@ -15,12 +16,12 @@ const ThankYouCard = () => {
         </div>
         <div
           style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: THEME.fonts.serif,
             fontStyle: "italic",
             fontWeight: 600,
             fontSize: "clamp(2.4rem, 6vw, 3.6rem)",
             lineHeight: 1.2,
-            background: "linear-gradient(135deg, #e5c07b 0%, #b8975e 50%, #94743c 100%)",
+            background: THEME.gradients.buttonGold,
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             marginBottom: "12px",
@@ -33,15 +34,15 @@ const ThankYouCard = () => {
         </p>
         <div
           style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: THEME.fonts.serif,
             fontStyle: "italic",
             fontWeight: 600,
             fontSize: "clamp(1.5rem, 3.5vw, 2rem)",
-            color: "#8b6b47",
+            color: THEME.colors.primaryBrown,
             letterSpacing: "0.5px",
           }}
         >
-          Quốc Bảo & Mai Anh
+          {WEDDING_INFO.groom.name} & {WEDDING_INFO.bride.name}
         </div>
       </div>
     </div>
