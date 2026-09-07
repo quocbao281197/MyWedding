@@ -47,10 +47,37 @@ export function CeremonySection({
             fontSize: "clamp(1.1rem, 3.5vw, 1.8rem)",
             lineHeight: 1.6,
             textTransform: "uppercase",
-            fontWeight: 500,
+            fontWeight: 600,
+            fontFamily: "'Playfair Display', Georgia, serif",
+            fontVariantNumeric: "lining-nums tabular-nums",
+            fontFeatureSettings: '"lnum" 1',
           }}
         >
-          {ceremonyTime}
+          {ceremonyTime ? (
+            <span>
+              {ceremonyTime.split(/(12|00)/g).map((part, i) =>
+                part === "12" || part === "00" ? (
+                  <span
+                    key={i}
+                    style={{
+                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontWeight: 700,
+                      fontSize: "1.18em",
+                      lineHeight: 1,
+                      display: "inline-block",
+                      verticalAlign: "baseline",
+                    }}
+                  >
+                    {part}
+                  </span>
+                ) : (
+                  part
+                )
+              )}
+            </span>
+          ) : (
+            ceremonyTime
+          )}
         </div>
 
         <div
@@ -59,9 +86,36 @@ export function CeremonySection({
             fontSize: "clamp(0.85rem, 2.5vw, 1.25rem)",
             textTransform: "uppercase",
             letterSpacing: "1px",
+            fontFamily: "'Playfair Display', Georgia, serif",
+            fontVariantNumeric: "lining-nums tabular-nums",
+            fontFeatureSettings: '"lnum" 1',
           }}
         >
-          {englishTime}
+          {englishTime ? (
+            <span>
+              {englishTime.split(/(12:00)/g).map((part, i) =>
+                part === "12:00" ? (
+                  <span
+                    key={i}
+                    style={{
+                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontWeight: 700,
+                      fontSize: "1.18em",
+                      lineHeight: 1,
+                      display: "inline-block",
+                      verticalAlign: "baseline",
+                    }}
+                  >
+                    {part}
+                  </span>
+                ) : (
+                  part
+                )
+              )}
+            </span>
+          ) : (
+            englishTime
+          )}
         </div>
 
         <div
@@ -87,6 +141,7 @@ export function CeremonySection({
           <div
             style={{
               fontSize: "clamp(1rem, 3vw, 1.6rem)",
+              fontWeight: 700,
               lineHeight: 1.6,
               whiteSpace: "pre-line",
             }}

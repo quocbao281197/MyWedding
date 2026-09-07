@@ -30,10 +30,10 @@ export const WEDDING_INFO = {
     monthDisplay: "11",
     year: "2026",
     dotFormatted: "29.11.2026",
-    titleFormatted: "29 THÁNG 11, 2026",
+    titleFormatted: "29 THÁNG 11 NĂM 2026",
     dayText: "CHỦ NHẬT / SUNDAY",
     monthText: "THÁNG 11\nNOVEMBER",
-    lunarText: "(Lunar date: October 21st, Year of the Snake)",
+    lunarText: "(Âm lịch: Ngày 21 tháng 10 năm Ất Tỵ / Lunar date: October 21st, Year of the Snake)",
   },
   ceremony: {
     time: "12:00",
@@ -41,7 +41,7 @@ export const WEDDING_INFO = {
     banquetTime: "12:30",
     ceremonyNoticeVi: "LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC VÀO LÚC 12 GIỜ 00 PHÚT",
     ceremonyNoticeEn: "OUR WEDDING CEREMONY WILL TAKE PLACE AT 12:00 PM",
-    venue: "DIAMOND PALACE",
+    venue: "NHÀ HÀNG TIỆC CƯỚI DIAMOND PALACE",
     hall: "Sảnh Gold",
     address: "101 Đường Lý Chiêu Hoàng, Khu V, Bình Phú, Hồ Chí Minh",
     mapUrl: "https://www.google.com/maps/dir/?api=1&destination=Diamond+Palace+101+Lý+Chiêu+Hoàng+Quận+6",
@@ -49,7 +49,7 @@ export const WEDDING_INFO = {
   timeline: [
     {
       time: "11:00",
-      title: "ĐÓN KHÁCH",
+      title: "Đón khách",
       subtitle: "GUEST RECEPTION",
     },
     {
@@ -59,7 +59,7 @@ export const WEDDING_INFO = {
     },
     {
       time: "12:30",
-      title: "Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR",
+      title: "Cùng nhau dùng tiệc và nâng ly chúc mừng CDCR",
       subtitle: "KHAI TIỆC / BANQUET BEGINS",
     },
   ],

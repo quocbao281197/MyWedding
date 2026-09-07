@@ -180,10 +180,10 @@ function TimeWeddingCountdown() {
                   className="leading-tight mt-28"
                   style={titleStyle}
                 >
-                  {WEDDING_INFO.bride.name}
+                  {WEDDING_INFO.groom.name}
                   <br />
                   <span className="text-[0.75em] block my-1 font-normal opacity-90">&</span>
-                  {WEDDING_INFO.groom.name}
+                  {WEDDING_INFO.bride.name}
                 </Typography.Title>
               ) : (
                 <div className="mt-8">
@@ -230,7 +230,7 @@ function TimeWeddingCountdown() {
               style={dateStyle}
             >
               {dayjs(targetDates[currentTargetIndex]).format(
-                "DD [THÁNG] MM, YYYY"
+                "DD [THÁNG] MM [NĂM] YYYY"
               )}
             </Typography.Title>
           ) : (
