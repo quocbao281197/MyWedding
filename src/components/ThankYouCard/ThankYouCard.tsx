@@ -35,7 +35,6 @@ const ThankYouCard = () => {
         <div
           style={{
             fontFamily: THEME.fonts.serif,
-            fontStyle: "italic",
             fontWeight: 600,
             fontSize: "clamp(1.5rem, 3.5vw, 2rem)",
             color: THEME.colors.primaryBrown,

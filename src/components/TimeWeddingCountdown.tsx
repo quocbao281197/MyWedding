@@ -88,7 +88,6 @@ function TimeWeddingCountdown() {
     fontFamily: THEME.fonts.serif,
     fontSize: "clamp(2.4rem, 6.5vw, 4.2rem)",
     lineHeight: 1.25,
-    fontStyle: "italic",
     fontWeight: 600,
     letterSpacing: "0.02em",
     background: THEME.gradients.textGold,
