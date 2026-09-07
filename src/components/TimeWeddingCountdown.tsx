@@ -27,7 +27,6 @@ function TimeWeddingCountdown() {
   const [bgImage, setBgImage] = useState<string | undefined>(undefined);
   const [textVisible, setTextVisible] = useState(false);
   const [hasStartedLoading, setHasStartedLoading] = useState(false);
-  const [_, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -55,15 +54,6 @@ function TimeWeddingCountdown() {
 
     return () => observer.disconnect();
   }, []);
-
-  // when we start loading on mobile, open the card panels after a short delay
-  useEffect(() => {
-    if (hasStartedLoading && !imageLoaded) {
-      const t = setTimeout(() => setMobileOpen(true), 600);
-      return () => clearTimeout(t);
-    }
-    return;
-  }, [hasStartedLoading, imageLoaded]);
 
   useEffect(() => {
     const updateCountdown = () => {
@@ -100,14 +90,15 @@ function TimeWeddingCountdown() {
 
   // Responsive font sizes (clamp for mobile -> desktop)
   const titleStyle: React.CSSProperties = {
-    fontFamily: "'Great Vibes', cursive",
-    fontSize: "clamp(2rem, 5vw, 4rem)",
-    lineHeight: 1.2,
-    fontWeight: "bold",
-    background: "linear-gradient(135deg, #e5c07b 0%, #b8975e 50%, #94743c 100%)",
+    fontFamily: "'Playfair Display', Georgia, serif",
+    fontSize: "clamp(2.4rem, 6.5vw, 4.2rem)",
+    lineHeight: 1.25,
+    fontStyle: "italic",
+    fontWeight: 600,
+    letterSpacing: "0.02em",
+    background: "linear-gradient(135deg, #FFF8EB 0%, #F5D38E 45%, #D4A34D 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    filter: "drop-shadow(2px 2px 3px rgba(40, 30, 15, 0.5))",
   };
 
   const numberStyle: React.CSSProperties = {
@@ -123,8 +114,15 @@ function TimeWeddingCountdown() {
   };
 
   const dateStyle: React.CSSProperties = {
-    color: "white",
-    fontSize: "clamp(1rem, 2.5vw, 2rem)",
+    fontFamily: "'Playfair Display', 'Montserrat', serif",
+    fontSize: "clamp(1.1rem, 3.2vw, 1.8rem)",
+    lineHeight: 1.4,
+    fontWeight: 600,
+    letterSpacing: "0.18em",
+    textTransform: "uppercase",
+    background: "linear-gradient(135deg, #FFF8EB 0%, #F5D38E 45%, #D4A34D 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
   };
 
   useEffect(() => {
@@ -190,8 +188,9 @@ function TimeWeddingCountdown() {
                   style={titleStyle}
                 >
                   Mai Anh
-                  <br />&<br />
-                  Quốc Bảo
+                  <br />
+                  <span className="text-[0.75em] block my-1 font-normal opacity-90">&</span>
+                  Quốc Bảo
                 </Typography.Title>
               ) : (
                 <div className="mt-8">
@@ -209,7 +208,7 @@ function TimeWeddingCountdown() {
             {values.map((element, index) => (
               <div key={`circle-${index}`} className="p-1 sm:p-4 shrink-0">
                 {imageLoaded ? (
-                  <div className="bg-[#F4146E95] rounded-full shadow-lg flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36">
+                  <div className="bg-[#b8975e]/85 backdrop-blur-sm border border-[#e5c07b]/40 rounded-full shadow-lg flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36">
                     <Typography.Text
                       className="text-center font-semibold leading-tight"
                       style={numberStyle}
@@ -239,7 +238,7 @@ function TimeWeddingCountdown() {
               style={dateStyle}
             >
               {dayjs(targetDates[currentTargetIndex]).format(
-                "DD [THÁNG] MM YYYY"
+                "DD [THÁNG] MM, YYYY"
               )}
             </Typography.Title>
           ) : (

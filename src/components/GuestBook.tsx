@@ -23,11 +23,11 @@ const GuestbookForm = () => {
   }, []);
 
   const GOOGLE_FORM_ACTION =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfo9DsxLroPh-_XTAIiq6hcXCPYjXxkV8IX5hVeEsNkVxiHZQ/formResponse";
+    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdb2-aKOT-IUM2_mt4mmuJ_JEufxMvWooUl_wuGmojp-OFbIg/formResponse";
 
   const GOOGLE_FORM_FIELDS = {
-    name: "entry.770927109",
-    wish: "entry.1379562861",
+    name: "entry.175920834",
+    wish: "entry.928499893",
   };
 
   const handleSubmit = async (values: any) => {
@@ -63,11 +63,11 @@ const GuestbookForm = () => {
       }}
     >
       <div
-        className="bg-white p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-md"
+        className="bg-white p-6 sm:p-8 rounded-xl shadow-2xl border border-[#e5c07b]/30 w-full max-w-md"
         data-aos="fade-up"
       >
         <div className="text-center mb-6">
-          <Title level={3} className="text-pink-600 font-bold">
+          <Title level={3} className="!text-[#b8975e] font-bold font-serif">
             Sổ lưu bút 💌
           </Title>
           <Text className="text-gray-700 italic">
@@ -105,12 +105,12 @@ const GuestbookForm = () => {
               type="primary"
               htmlType="submit"
               loading={loading}
-              className="w-full bg-pink-600 hover:bg-pink-600"
+              className="w-full bg-[#b8975e] hover:bg-[#94743c] border-none"
               style={{
-                backgroundColor: "rgb(219, 39, 119)",
+                backgroundColor: "#b8975e",
               }}
             >
-              <span className="font-semibold text-base sm:text-lg text-gray-800 text-white">
+              <span className="font-semibold text-base sm:text-lg text-white">
                 Gửi lời chúc
               </span>
             </Button>

@@ -12,7 +12,7 @@ type CeremonySectionProps = {
 };
 
 export function CeremonySection({
-  ceremonyTime = "LỄ VU QUY ĐƯỢC TỔ CHỨC VÀO LÚC 12 GIỜ 00 PHÚT",
+  ceremonyTime = "LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC VÀO LÚC 12 GIỜ 00 PHÚT",
   englishTime = "OUR WEDDING CEREMONY WILL TAKE PLACE AT 12:00 PM",
   dayText = "CHỦ NHẬT / SUNDAY",
   monthText = "THÁNG 11\nNOVEMBER",
@@ -27,23 +27,28 @@ export function CeremonySection({
     <div
       style={{
         width: "100%",
-        background: "#fff",
+        background: "#faf7f2",
         display: "flex",
         justifyContent: "center",
-        padding: "20px 10px",
+        padding: "30px 16px",
         boxSizing: "border-box",
       }}
     >
       <div
         style={{
           width: "100%",
-          maxWidth: "1100px",
-        //   border: "1px solid #e5e5e5",
-          padding: "20px 50px",
-          background: "#fff",
+          maxWidth: "960px",
+          padding: "45px 24px",
+          background: "#ffffff",
+          borderRadius: "24px",
+          border: "1px solid rgba(229, 192, 123, 0.45)",
+          outline: "1px solid rgba(229, 192, 123, 0.2)",
+          outlineOffset: "-10px",
+          boxShadow: "0 16px 40px rgba(127, 100, 67, 0.08)",
           textAlign: "center",
-          fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+          fontFamily: "'Playfair Display', Georgia, serif",
           color: "rgb(127, 100, 67)",
+          position: "relative",
         }}
       >
         {/* Flower */}
@@ -133,9 +138,12 @@ export function CeremonySection({
         {/* Lunar */}
         <div
           style={{
-            marginTop: "5px",
-            fontSize: "20px",
-            lineHeight: 1.8,
+            marginTop: "6px",
+            fontSize: "clamp(0.82rem, 2.7vw, 1.05rem)",
+            fontStyle: "italic",
+            letterSpacing: "0.4px",
+            lineHeight: 1.5,
+            opacity: 0.9,
           }}
         >
           {lunarText}
@@ -144,8 +152,8 @@ export function CeremonySection({
         {/* Rings */}
         <div
           style={{
-            marginTop: "5px",
-            fontSize: "70px",
+            marginTop: "12px",
+            fontSize: "clamp(2.5rem, 6vw, 3.8rem)",
           }}
         >
           💍
@@ -154,20 +162,24 @@ export function CeremonySection({
         {/* Venue */}
         <div
           style={{
-            marginTop: "20px",
-            fontSize: "27px",
-            fontWeight: 600,
+            marginTop: "16px",
+            fontSize: "clamp(1.25rem, 3.8vw, 1.6rem)",
+            fontWeight: 700,
             textTransform: "uppercase",
+            letterSpacing: "1.5px",
           }}
         >
           {venue}
         </div>
 
+        {/* Hall */}
         <div
           style={{
-            marginTop: "5px",
-            fontSize: "25px",
+            marginTop: "6px",
+            fontSize: "clamp(1.05rem, 3vw, 1.25rem)",
+            fontWeight: 700,
             textTransform: "uppercase",
+            letterSpacing: "1px",
           }}
         >
           {hall}
@@ -176,9 +188,13 @@ export function CeremonySection({
         {/* Address */}
         <div
           style={{
-            marginTop: "5px",
-            fontSize: "25px",
-            lineHeight: 1.8,
+            marginTop: "8px",
+            fontSize: "clamp(0.9rem, 2.6vw, 1.1rem)",
+            lineHeight: 1.6,
+            maxWidth: "520px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            opacity: 0.9,
           }}
         >
           {address}

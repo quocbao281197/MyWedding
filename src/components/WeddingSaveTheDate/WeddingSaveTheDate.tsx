@@ -16,30 +16,35 @@ export default function WeddingSaveTheDate({
       style={{
         width: "100%",
         minHeight: "85vh",
-        background: "#FFFFFF",
+        background: "linear-gradient(180deg, #faf7f2 0%, #f6f1e8 100%)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "10px 10px",
+        padding: "40px 16px",
         boxSizing: "border-box",
-        fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
-        color: "rgb(127, 100, 67)"
+        fontFamily: "'Playfair Display', Georgia, serif",
+        color: "rgb(127, 100, 67)",
       }}
     >
       <div
         style={{
           width: "100%",
-          maxWidth: "1200px",
-          padding: "10px 30px",
-        //   border: "1px solid #e5e5e5",
+          maxWidth: "960px",
+          padding: "50px 24px",
           background: "#FFFFFF",
-          textAlign: "center"
+          borderRadius: "24px",
+          border: "1px solid rgba(229, 192, 123, 0.45)",
+          outline: "1px solid rgba(229, 192, 123, 0.2)",
+          outlineOffset: "-12px",
+          boxShadow: "0 16px 40px rgba(127, 100, 67, 0.08)",
+          textAlign: "center",
+          position: "relative",
         }}
       >
         {/* Title */}
         <div
           style={{
-            fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+            fontFamily: "'Playfair Display', Georgia, serif",
             color: "rgb(127, 100, 67)"
           }}
         >
@@ -107,7 +112,9 @@ export default function WeddingSaveTheDate({
               maxWidth: "300px",
               height: "300px",
               objectFit: "cover",
-              border: "1px solid #ddd",
+              border: "3px solid #b8975e",
+              borderRadius: "16px",
+              boxShadow: "0 8px 24px rgba(127, 100, 67, 0.15)",
             }}
           />
         </div>

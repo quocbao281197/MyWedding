@@ -59,11 +59,11 @@ const WeddingAlbum = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-white py-8 px-4 sm:px-6 lg:px-20">
+    <div className="w-full min-h-screen bg-[#faf7f2] py-14 px-4 sm:px-6 lg:px-20">
       <div className="text-center mb-10">
         <Title
           level={3}
-          className="!text-pink-600 !font-bold !text-xl sm:!text-2xl lg:!text-3xl"
+          className="!text-[#b8975e] !font-bold !text-xl sm:!text-2xl lg:!text-3xl font-serif"
         >
           Album hình cưới
         </Title>
@@ -85,7 +85,7 @@ const WeddingAlbum = () => {
                 src={src}
                 alt={`Wedding ${index + 1}`}
                 draggable={false}
-                className="object-cover h-64 w-full rounded-md cursor-pointer select-none"
+                className="object-cover h-64 w-full rounded-xl cursor-pointer select-none border border-[#e5c07b]/40 shadow-md hover:shadow-xl transition-all duration-300"
                 preview={{ movable: true }}
               />
             </div>

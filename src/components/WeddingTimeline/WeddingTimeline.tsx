@@ -22,7 +22,7 @@ export default function WeddingTimeline({
       time: "12:00",
       title:
         "Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR",
-      subtitle: "LỄ VU QUY / THE BRIDE’S FAMILY CEREMONY",
+      subtitle: "LỄ THÀNH HÔN / WEDDING CEREMONY",
     },
     {
       time: "12:15",
@@ -37,7 +37,7 @@ export default function WeddingTimeline({
       style={{
         width: "100%",
         minHeight: "100vh",
-        background: "#ffffff",
+        background: "linear-gradient(180deg, #faf7f2 0%, #f4ede1 50%, #faf7f2 100%)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -83,7 +83,7 @@ export default function WeddingTimeline({
               transform: "translateX(-50%)",
               fontSize: "54px",
               fontStyle: "italic",
-              fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+              fontFamily: "'Playfair Display', Georgia, serif",
               color: "rgb(255, 255, 255)",
               whiteSpace: "nowrap",
             }}
@@ -115,7 +115,7 @@ export default function WeddingTimeline({
                   minWidth: "120px",
                   fontSize: "25px",
                   fontWeight: 600,
-                  fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+                  fontFamily: "'Playfair Display', Georgia, serif",
                   color: "rgb(127, 100, 67)",
                 }}
               >
@@ -126,7 +126,7 @@ export default function WeddingTimeline({
               <div
                 style={{
                   flex: 1,
-                  borderLeft: "2px solid #ddd",
+                  borderLeft: "2px solid rgba(184, 151, 94, 0.45)",
                   paddingLeft: "28px",
                 }}
               >
@@ -135,7 +135,7 @@ export default function WeddingTimeline({
                     fontSize: "28px",
                     color: "rgb(127, 100, 67)",
                     lineHeight: 1.7,
-                    fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+                    fontFamily: "'Playfair Display', Georgia, serif",
                   }}
                 >
                   {item.title}
@@ -146,7 +146,7 @@ export default function WeddingTimeline({
                     marginTop: "12px",
                     fontSize: "20px",
                     color: "rgb(127, 100, 67)",
-                    fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+                    fontFamily: "'Playfair Display', Georgia, serif",
                     textTransform: "uppercase",
                     letterSpacing: "1px",
                     lineHeight: 1.6,
@@ -161,7 +161,7 @@ export default function WeddingTimeline({
                       marginTop: "12px",
                       fontSize: "18px",
                       color: "rgb(127, 100, 67)",
-                      fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+                      fontFamily: "'Playfair Display', Georgia, serif",
                       lineHeight: 1.8,
                     }}
                   >

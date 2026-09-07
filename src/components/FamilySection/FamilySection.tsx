@@ -15,31 +15,36 @@ export function FamilySection({
     <div
       style={{
         width: "100%",
-        background: "#fff",
+        background: "#faf7f2",
         display: "flex",
         justifyContent: "center",
-        padding: "20px 20px",
+        padding: "30px 16px",
         boxSizing: "border-box",
       }}
     >
       <div
-        className="w-full max-w-[1000px] py-12 px-4 sm:px-10 grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] items-center bg-white gap-8 md:gap-0"
+        className="w-full max-w-[960px] py-12 px-6 sm:px-12 grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] items-center bg-white rounded-2xl border border-[#e5c07b]/45 shadow-[0_16px_40px_rgba(127,100,67,0.08)] gap-8 md:gap-0 relative"
+        style={{
+          outline: "1px solid rgba(229, 192, 123, 0.2)",
+          outlineOffset: "-10px",
+        }}
       >
         {/* Bride Family */}
         <div
           style={{
             textAlign: "center",
-            fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+            fontFamily: "'Playfair Display', Georgia, serif",
             color: "rgb(127, 100, 67)",
             padding: "0 10px",
           }}
         >
           <div
             style={{
-              fontSize: "clamp(1.2rem, 3.5vw, 1.6rem)",
+              fontSize: "clamp(1.4rem, 4.5vw, 1.85rem)",
               fontWeight: 600,
               textTransform: "uppercase",
               lineHeight: 1.5,
+              letterSpacing: "1px",
             }}
           >
             NHÀ GÁI
@@ -47,9 +52,10 @@ export function FamilySection({
 
           <div
             style={{
-              fontSize: "clamp(1rem, 3vw, 1.3rem)",
+              fontSize: "clamp(1.05rem, 3.2vw, 1.35rem)",
               marginTop: "8px",
               textTransform: "uppercase",
+              letterSpacing: "0.5px",
             }}
           >
             Bride’s Family
@@ -58,8 +64,9 @@ export function FamilySection({
           <div
             style={{
               marginTop: "20px",
-              fontSize: "clamp(0.95rem, 2.8vw, 1.25rem)",
-              lineHeight: 1.8,
+              fontSize: "clamp(1.15rem, 3.6vw, 1.45rem)",
+              lineHeight: 2.1,
+              fontWeight: 500,
             }}
           >
             <div>{brideFather}</div>
@@ -69,12 +76,13 @@ export function FamilySection({
 
         {/* Divider */}
         <>
-          <div className="h-[1px] w-full bg-[#999]/30 md:hidden" />
+          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#e5c07b]/60 to-transparent md:hidden" />
           <div
-            className="hidden md:block bg-[#999]"
+            className="hidden md:block bg-gradient-to-b from-transparent via-[#e5c07b]/60 to-transparent"
             style={{
               width: "1px",
-              height: "100%",
+              height: "80%",
+              margin: "auto",
             }}
           />
         </>
@@ -83,17 +91,18 @@ export function FamilySection({
         <div
           style={{
             textAlign: "center",
-            fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
+            fontFamily: "'Playfair Display', Georgia, serif",
             color: "rgb(127, 100, 67)",
             padding: "0 10px",
           }}
         >
           <div
             style={{
-              fontSize: "clamp(1.2rem, 3.5vw, 1.6rem)",
+              fontSize: "clamp(1.4rem, 4.5vw, 1.85rem)",
               fontWeight: 600,
               textTransform: "uppercase",
               lineHeight: 1.5,
+              letterSpacing: "1px",
             }}
           >
             NHÀ TRAI
@@ -101,9 +110,10 @@ export function FamilySection({
 
           <div
             style={{
-              fontSize: "clamp(1rem, 3vw, 1.3rem)",
+              fontSize: "clamp(1.05rem, 3.2vw, 1.35rem)",
               marginTop: "8px",
               textTransform: "uppercase",
+              letterSpacing: "0.5px",
             }}
           >
             Groom’s Family
@@ -112,8 +122,9 @@ export function FamilySection({
           <div
             style={{
               marginTop: "20px",
-              fontSize: "clamp(0.95rem, 2.8vw, 1.25rem)",
-              lineHeight: 1.8,
+              fontSize: "clamp(1.15rem, 3.6vw, 1.45rem)",
+              lineHeight: 2.1,
+              fontWeight: 500,
             }}
           >
             <div>{groomFather}</div>

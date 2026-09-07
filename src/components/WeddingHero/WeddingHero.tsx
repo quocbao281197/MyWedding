@@ -16,13 +16,13 @@ export default function WeddingHero({
       style={{
         width: "100%",
         minHeight: "100vh",
-        background: "#ffffff",
+        background: "linear-gradient(180deg, #faf7f2 0%, #f4ede1 50%, #faf7f2 100%)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "60px 20px",
         boxSizing: "border-box",
-        fontFamily: "serif",
+        fontFamily: "'Playfair Display', Georgia, serif",
       }}
     >
       <div

@@ -41,16 +41,16 @@ export default function WeddingCalendar({
   return (
     <div
       style={{
-        width: "480px",
-        padding: "40px 35px 50px",
+        width: "calc(100% - 32px)",
+        maxWidth: "440px",
+        padding: "36px 20px 45px",
         background: "rgb(127, 100, 67)",
-        // background: "#FFFFFF",
-        border: "2px solid #000",
+        border: "1px solid rgba(229, 192, 123, 0.4)",
         borderRadius: "18px",
-        fontFamily: "MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY",
-        // color: "rgb(127, 100, 67)",
+        fontFamily: "'Playfair Display', Georgia, serif",
         color: "#FFFFFF",
-        boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+        boxShadow: "0 12px 36px rgba(40, 30, 15, 0.25)",
+        boxSizing: "border-box",
       }}
     >
       {/* Month */}

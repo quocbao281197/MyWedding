@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .intro-content {
@@ -15,24 +15,15 @@
   color: white;
 }
 
-.intro-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.intro-subtitle {
-  font-size: 1.5rem;
-}
-
 .fade-in {
   opacity: 1;
-  transform: translateX(0);
+  transform: scale(1);
 }
 
 .fade-out {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: scale(1.08);
+  pointer-events: none;
 }
 
 @keyframes slideIn {

@@ -6,7 +6,7 @@ const MoneyBoxModal = ({ isModalVisible, toggleModal }: any) => {
   return (
     <Modal
       title={
-        <div className="flex items-center gap-2 text-pink-600 font-semibold text-lg">
+        <div className="flex items-center gap-2 text-[#b8975e] font-semibold text-lg font-serif">
           <GiftOutlined />
           <span>Hộp mừng cưới</span>
         </div>

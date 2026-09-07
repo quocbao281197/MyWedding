@@ -13,14 +13,20 @@ const IntroMessage = () => {
 
   return (
     <div
-      className="w-full px-4 py-10 bg-gradient-to-b from-pink-50 to-white"
+      className="w-full px-4 py-14 bg-[#faf7f2]"
       data-aos="fade-up"
     >
-      <div className="max-w-3xl mx-auto text-center">
-        <Title level={3} className="text-pink-600 mb-4">
+      <div
+        className="max-w-3xl mx-auto text-center bg-white p-8 sm:p-12 rounded-2xl border border-[#e5c07b]/40 shadow-[0_16px_40px_rgba(127,100,67,0.08)] relative"
+        style={{
+          outline: "1px solid rgba(229, 192, 123, 0.2)",
+          outlineOffset: "-10px",
+        }}
+      >
+        <Title level={3} className="!text-[#b8975e] mb-4 font-serif">
           💌 Lời Ngỏ
         </Title>
-        <Paragraph className="text-gray-700 text-lg whitespace-pre-line leading-relaxed">
+        <Paragraph className="text-gray-700 text-base sm:text-lg whitespace-pre-line leading-relaxed font-serif">
           Bằng tất cả sự trân trọng chúng con xin cám ơn tất cả những người thân
           yêu, cô dì, chú bác, anh chị em, bạn bè và đồng nghiệp của tụi con/tụi
           em.
@@ -35,11 +41,11 @@ const IntroMessage = () => {
           người vào ngày trọng đại sắp tới !!!
         </Paragraph>
 
-        <div className="mt-8">
+        <div className="mt-8 flex justify-center">
           <Image
             src={Img03}
             alt="Ảnh cô dâu chú rể"
-            className="rounded-xl shadow-lg"
+            className="rounded-xl shadow-md border-2 border-[#b8975e]/60 object-cover"
             width={300}
             preview={false}
           />

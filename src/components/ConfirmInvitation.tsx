@@ -77,8 +77,8 @@ const ConfirmInvitation = () => {
       }}
       data-aos="fade-in"
     >
-      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-lg">
-        <Title level={3} className="text-center text-pink-600 mb-6">
+      <div className="bg-white p-6 sm:p-8 rounded-xl shadow-2xl border border-[#e5c07b]/30 w-full max-w-lg">
+        <Title level={3} className="text-center !text-[#b8975e] mb-6 font-serif">
           Xác nhận tham dự
         </Title>
         <Form form={form} layout="vertical" onFinish={handleSubmit}>
@@ -155,9 +155,9 @@ const ConfirmInvitation = () => {
             loading={loading}
             type="primary"
             style={{
-              backgroundColor: "rgb(219, 39, 119)",
+              backgroundColor: "#b8975e",
             }}
-            className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold border-none rounded-lg shadow-md transition duration-300 "
+            className="w-full bg-[#b8975e] hover:bg-[#94743c] text-white font-semibold border-none rounded-lg shadow-md transition duration-300"
           >
             <span className="font-semibold text-base sm:text-lg text-white">
               Xác nhận

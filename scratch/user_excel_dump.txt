@@ -1,0 +1,195 @@
+Sheet: Sheet1, max_row: 43, max_col: 4
+Row 1: STT | Mã hình chính sửa  | Nội dung chỉnh sửa | NOTE
+Row 2: 1 | VHH_8705 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+kéo CR gần sát kế bên hơn với CD
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 3: 2 | VHH_8526 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa cánh tay và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu  
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 4: 3 | VHH_8473 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu  
+chỉnh màu trời sáng tươi xanh hơn  | hình in để bàn 
+Row 5: 4 | VHH_8337 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu  
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 6: 5 | VHH_8238 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 7: 6 | VHH_8154 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 8: 7 | VHH_8234 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng gương mặt  | 
+Row 9: 8 | VHH_8188 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người 
+chỉnh màu trời sáng tươi xanh hơn  | hình in để bàn 
+Row 10: 9 | VHH_8103 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người  | 
+Row 11: 10 | VHH_8062 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người  | 
+Row 12: 11 | VHH_8024 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh màu trời sáng tươi xanh hơn 
+chỉnh độ sáng chói ánh sáng chiếu vào người  | 
+Row 13: 12 | VHH_7858 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay thon và xóa mỡ thừa và mịn da 
+xóa kẹp tăm phần voan
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 14: 13 | VHH_7815 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay thon và xóa mỡ thừa và mịn da 
+xóa kẹp tăm phần voan
+chỉnh hình cân đối , không bị nghiêng | 
+Row 15: 14 | VHH_7795 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay thon và xóa mỡ thừa và mịn da 
+xóa kẹp tăm phần voan
+chỉnh hình cân đối , không bị nghiêng
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 16: 15 | VHH_7722 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+xóa kẹp tăm phần voan | 
+Row 17: 16 | VHH_7692 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+xóa kẹp tăm phần voan | 
+Row 18: 17 | VHH_7671 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh nhẹ phần mái tóc CR
+chỉnh màu trời sáng tươi xanh hơn  | hình in để bàn 
+Row 19: 18 | VHH_7625 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu 
+chỉnh độ sáng chói ánh sáng chiếu vào người 
+chỉnh nhẹ phần mái tóc CR
+chỉnh màu trời sáng tươi xanh hơn  | ảnh cổng 
+Row 20: 19 | VHH_7588 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+xóa kẹp tăm phần voan
+chỉnh độ sáng chói ánh sáng chiếu vào người  | 
+Row 21: 20 | VHH_7577 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da 
+xóa kẹp tăm phần voan | 
+Row 22: 21 | VHH_7560 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da  | 
+Row 23: 22 | VHH_7486 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da  | 
+Row 24: 23 | VHH_7463 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da  | 
+Row 25: 24 | VHH_7435 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa và mịn da  | 
+Row 26: 25 | VHH_7428 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+ chỉnh tay thon và xóa mỡ thừa lưng  | 
+Row 27: 26 | VHH_7293 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối  | 
+Row 28: 27 | VHH_7279 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh nhẹ phần mái tóc CR | 
+Row 29: 28 | VHH_7243 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh màu trời sáng tươi xanh hơn 
+chỉnh tay thon , mịn da  | 
+Row 30: 29 | VHH_7189 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh màu trời sáng tươi xanh hơn 
+chỉnh tay thon  | hình in để bàn 
+Row 31: 30 | VHH_7106 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh màu trời sáng tươi xanh hơn 
+chỉnh tay thon và xóa mỡ thừa lưng  | 
+Row 32: 31 | VHH_7021 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 33: 32 | VHH_6994 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 34: 33 | TLAT1479 | thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+xóa dây treo chữ Hỷ
+làm hồng môi CD xíu  | 
+Row 35: 34 | TLAT1619 | xóa dây treo chữ Hỷ
+thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+xóa vết nhăn, băng keo tấm nền đỏ
+làm hồng môi CD xíu   | 
+Row 36: 35 | TLAT1670 | xóa dây treo chữ Hỷ
+thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+xóa vết nhăn, băng keo tấm nền đỏ
+làm hồng môi CD xíu  | 
+Row 37: 36 | TLAT1882 | thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm hồng môi CD xíu  | 
+Row 38: 37 | TLAT2019 | thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm hồng môi CD xíu  | 
+Row 39: 38 | TLAT1793 | thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+xóa vết nhăn, băng keo tấm nền đỏ
+làm hồng môi CD xíu  | hình in để bàn 
+Row 40: 39 | TLAT1766 | thon gọn mặt
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+xóa vết nhăn, băng keo tấm nền đỏ
+làm hồng môi CD xíu  | 
+Row 41: 40 | TLAT1585 | xóa dây treo chữ Hỷ
+làm cao thon gọn người cân đối 
+mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+xóa vết nhăn tấm nền đỏ 
+làm hồng môi CD xíu  | 
+Row 42: 41 | VHH_8633 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa cánh tay và mịn da 
+chỉnh phần trang điểm rõ nét tươi xíu  
+chỉnh màu trời sáng tươi xanh hơn  | 
+Row 43: 42 | VHH_8488 | mịn da, làm thon gọn, xóa khuyết điểm trên gương mặt 
+làm cao thon gọn người cân đối 
+chỉnh tay bụng thon và xóa mỡ thừa và mịn da 
+chỉnh màu trời sáng tươi xanh hơn  | 

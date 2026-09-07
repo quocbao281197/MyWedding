@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./index.css"; // Ensure this includes .no-scrollbar CSS
 import { useS } from "use-s-react";
-import Papa from "papaparse";
 import { ReactSVG } from "react-svg";
 import { IcLeft, IcRight } from "../../assets";
 
@@ -31,94 +30,88 @@ const ListWishes = () => {
   const dragInfo = useRef({ startX: 0, startTranslate: 0 });
   const [currentTranslate, setCurrentTranslate] = useState(0);
 
-  const GOOGLE_SHEET_CSV_URL =
-    "https://docs.google.com/spreadsheets/d/10fBTFk_T5rq0vXqA8HtOT3UbQP9LO55iH4OoNY8o5Xo/export?format=csv&gid=1100263779"; // prettier-ignore
-
-  const PROXY_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent(
-    GOOGLE_SHEET_CSV_URL
-  )}`;
+  const SHEET_ID = "1y5mD-K-M4ePk5XceoIdS7rk9j6htpPGwxflm_3yV2jI";
 
   const fetchData = useCallback(async () => {
-    const fetchWithTimeout = async (url: string, timeout = 8000) => {
-      const controller = new AbortController();
-      const id = window.setTimeout(() => controller.abort(), timeout);
-      try {
-        const res = await fetch(url, {
-          signal: controller.signal,
-          cache: "no-store",
-        });
-        return res;
-      } finally {
-        clearTimeout(id);
-      }
-    };
+    const sanitize = (text: string) =>
+      text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-    const retryFetchText = async (
-      url: string,
-      attempts = 3,
-      timeout = 8000
-    ) => {
-      let lastErr: unknown;
-      for (let i = 0; i < attempts; i++) {
-        try {
-          const r = await fetchWithTimeout(url, timeout);
-          if (!r.ok) throw new Error(`HTTP ${r.status}`);
-          const t = await r.text();
-          return t;
-        } catch (err) {
-          lastErr = err;
-          // small backoff
-          await new Promise((res) => setTimeout(res, 300 * (i + 1)));
-        }
-      }
-      throw lastErr;
-    };
+    // Fetch via Google Visualization API (JSONP - native, fast, zero CORS issues)
+    const fetchJsonp = (): Promise<Submission[]> => {
+      return new Promise((resolve, reject) => {
+        const callbackName =
+          "handleWeddingWishes_" + Math.random().toString(36).substring(2, 9);
+        const script = document.createElement("script");
+        const timeout = setTimeout(() => {
+          cleanup();
+          reject(new Error("Timeout loading wishes"));
+        }, 8000);
 
-    const buildUrl = (u: string) =>
-      `${u}${u.includes("?") ? "&" : "?"}_=${Date.now()}`;
+        const cleanup = () => {
+          clearTimeout(timeout);
+          delete (window as unknown as Record<string, unknown>)[callbackName];
+          if (script.parentNode) script.parentNode.removeChild(script);
+        };
+
+        (window as unknown as Record<string, unknown>)[callbackName] = (data: {
+          table?: {
+            rows?: Array<{ c?: Array<{ v?: unknown } | null> }>;
+          };
+        }) => {
+          cleanup();
+          try {
+            const rows = data?.table?.rows || [];
+            const result: Submission[] = [];
+
+            const isHeader = (val: string) => {
+              const lower = val.toLowerCase();
+              return (
+                lower.includes("time") ||
+                lower.includes("dấu thời gian") ||
+                lower === "tên của bạn" ||
+                lower === "lời chúc"
+              );
+            };
+
+            for (const row of rows) {
+              const cells = row?.c || [];
+              if (cells.length < 3) continue;
+
+              const cell0 = String(cells[0]?.v ?? "").trim();
+              if (isHeader(cell0)) continue;
+
+              const name = sanitize(String(cells[1]?.v ?? "").trim());
+              const wish = sanitize(String(cells[2]?.v ?? "").trim());
+
+              if (name && wish && !isHeader(name)) {
+                result.push({ name, wish });
+              }
+            }
+            resolve(result);
+          } catch (err) {
+            reject(err);
+          }
+        };
+
+        script.src = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=responseHandler:${callbackName}&_=${Date.now()}`;
+        script.onerror = () => {
+          cleanup();
+          reject(new Error("Script load error"));
+        };
+        document.body.appendChild(script);
+      });
+    };
 
     try {
-      const text = await retryFetchText(buildUrl(PROXY_URL), 3, 8000);
-      const result = Papa.parse(text, {
-        header: true,
-        skipEmptyLines: true,
-      });
-
-      const sanitize = (text: string) =>
-        text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-
-      const cleaned = (result.data as unknown[])
-        .map((row) => {
-          const r = row as Record<string, unknown>;
-          return {
-            name: sanitize(String(r["ten"] || "").trim()),
-            wish: sanitize(String(r["loi_chuc"] || "").trim()),
-          };
-        })
-        .filter((row) => row.name && row.wish) as Submission[];
-
-      const unique = Array.from(
-        new Map(
-          cleaned.map((item) => [`${item.name}-${item.wish}`, item])
-        ).values()
-      );
-
-      setSubmissions(unique as Submission[]);
+      const remoteWishes = await fetchJsonp();
+      setSubmissions(remoteWishes);
     } catch (error) {
-      console.error("Failed to fetch data:", error);
-
-      try {
-        const fallback = await import("../../data/guestbook-fallback.json");
-        if (Array.isArray(fallback?.default || fallback)) {
-          setSubmissions(fallback.default || fallback);
-        }
-      } catch (err) {
-        console.error("Failed to load fallback guestbook:", err);
-      }
+      console.warn("Could not fetch real-time wishes from Sheet:", error);
+      setSubmissions([]);
     } finally {
       setLoading(false);
     }
-  }, [PROXY_URL, setSubmissions]);
+  }, [setSubmissions]);
 
   useEffect(() => {
     fetchData();
@@ -227,7 +220,7 @@ const ListWishes = () => {
         <div
           key={i}
           className={`h-3 w-3 rounded-full ${
-            i === index ? "bg-pink-500 opacity-100" : "bg-gray-300 opacity-50"
+            i === index ? "bg-[#b8975e] opacity-100" : "bg-gray-300 opacity-50"
           }`}
         />
       ))}
@@ -237,10 +230,10 @@ const ListWishes = () => {
   if (submissions.length === 0 && !loading) return null;
 
   return (
-    <div className="py-8 w-full px-4 sm:py-10">
+    <div className="py-12 w-full px-4 bg-[#faf7f2]">
       <Typography.Title
         level={3}
-        className="text-center text-white mb-4 text-lg sm:text-xl md:text-2xl"
+        className="text-center !text-[#b8975e] mb-6 text-lg sm:text-xl md:text-2xl font-serif"
         data-aos="fade-down"
       >
         💌 Lời chúc từ bạn bè
@@ -253,11 +246,11 @@ const ListWishes = () => {
             type="text"
             aria-label="Previous wish"
             onClick={handlePrev} // prettier-ignore
-            className="absolute left-2 sm:left-2 top-1/2 -translate-y-1/2 z-50 w-12 h-12 p-3 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center shadow-lg pointer-events-auto transition-opacity md:static md:w-10 md:h-10 md:p-1 md:translate-y-0"
+            className="absolute left-2 sm:left-2 top-1/2 -translate-y-1/2 z-50 w-12 h-12 p-3 bg-white/90 hover:bg-white border border-[#e5c07b]/30 rounded-full flex items-center justify-center shadow-md pointer-events-auto transition-all md:static md:w-10 md:h-10 md:p-1 md:translate-y-0"
           >
             <ReactSVG
               src={IcLeft}
-              className="w-6 h-6 md:w-4 md:h-4 text-pink-500"
+              className="w-6 h-6 md:w-4 md:h-4 text-[#b8975e]"
             />
           </Button>
 
@@ -285,15 +278,15 @@ const ListWishes = () => {
                     className="w-full flex-shrink-0 px-3 sm:px-4 md:px-6"
                   >
                     <div
-                      className={`min-h-[120px] sm:min-h-[150px] md:min-h-[160px] bg-white/10 backdrop-blur-md p-3 sm:p-4 md:p-5 shadow-md text-white flex items-center gap-3 rounded-xl transition-all duration-150 ${
+                      className={`min-h-[120px] sm:min-h-[150px] md:min-h-[160px] bg-white p-4 sm:p-5 shadow-[0_6px_24px_rgba(127,100,67,0.08)] flex items-center gap-4 rounded-2xl transition-all duration-200 ${
                         i === index
-                          ? "border-2 border-pink-500"
-                          : "border-2 border-transparent"
+                          ? "border-2 border-[#b8975e]"
+                          : "border border-[#e5c07b]/30"
                       }`}
                     >
                       <Avatar
                         shape="circle"
-                        className="flex-shrink-0 w-12 h-12 sm:w-11 sm:h-11 md:w-12 md:h-12 text-xs sm:text-sm md:text-base flex items-center justify-center"
+                        className="flex-shrink-0 w-12 h-12 sm:w-11 sm:h-11 md:w-12 md:h-12 text-xs sm:text-sm md:text-base font-bold bg-[#b8975e] text-white flex items-center justify-center shadow-sm"
                       >
                         {(() => {
                           const name = (wish.name || "").trim();
@@ -307,12 +300,12 @@ const ListWishes = () => {
                           ).toUpperCase();
                         })()}
                       </Avatar>
-                      <div className="flex-1 ml-3">
+                      <div className="flex-1 ml-2">
                         <div className="flex flex-col max-w-[92%] sm:max-w-full">
-                          <Typography.Text className="font-semibold text-white text-sm sm:text-base md:text-base">
+                          <Typography.Text className="font-semibold text-gray-900 text-sm sm:text-base md:text-base font-serif">
                             {wish.name}
                           </Typography.Text>
-                          <Typography.Text className="text-gray-300 line-clamp-3 mt-1 text-xs sm:text-sm md:text-sm break-words">
+                          <Typography.Text className="text-gray-600 line-clamp-3 mt-1 text-xs sm:text-sm md:text-sm break-words leading-relaxed">
                             {wish.wish}
                           </Typography.Text>
                         </div>
@@ -328,11 +321,11 @@ const ListWishes = () => {
             type="text"
             aria-label="Next wish"
             onClick={handleNext}
-            className="absolute right-2 sm:right-2 top-1/2 -translate-y-1/2 z-50 w-12 h-12 p-3 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center shadow-lg pointer-events-auto transition-opacity md:static md:w-10 md:h-10 md:p-1 md:translate-y-0"
+            className="absolute right-2 sm:right-2 top-1/2 -translate-y-1/2 z-50 w-12 h-12 p-3 bg-white/90 hover:bg-white border border-[#e5c07b]/30 rounded-full flex items-center justify-center shadow-md pointer-events-auto transition-all md:static md:w-10 md:h-10 md:p-1 md:translate-y-0"
           >
             <ReactSVG
               src={IcRight}
-              className="w-6 h-6 md:w-4 md:h-4 text-pink-500"
+              className="w-6 h-6 md:w-4 md:h-4 text-[#b8975e]"
             />
           </Button>
         </div>
