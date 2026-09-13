@@ -87,14 +87,17 @@ function TimeWeddingCountdown() {
   const titleStyle: React.CSSProperties = {
     fontFamily: THEME.fonts.serif,
     fontSize: "clamp(1.5rem, 4.2vw, 2.4rem)",
-    lineHeight: 1.2,
+    lineHeight: 1.4,
+    paddingTop: "0.25em",
+    paddingBottom: "0.1em",
     fontWeight: 600,
     letterSpacing: "0.08em",
     textTransform: "uppercase",
     background: THEME.gradients.textGold,
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    textShadow: "0 2px 10px rgba(0,0,0,0.5)",
+    filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.7))",
+    display: "inline-block",
   };
 
   const subtitleStyle: React.CSSProperties = {
@@ -103,7 +106,7 @@ function TimeWeddingCountdown() {
     letterSpacing: "0.25em",
     textTransform: "uppercase",
     color: "rgba(255, 255, 255, 0.85)",
-    marginBottom: "8px",
+    marginBottom: "4px",
     fontWeight: 500,
   };
 
