@@ -2,8 +2,8 @@ export const WEDDING_INFO = {
   groom: {
     name: "Quốc Bảo",
     fullName: "Nguyễn Quốc Bảo",
-    father: "Ông/ Mr. Nguyễn Văn Truyền",
-    mother: "Bà/ Mrs. Phạm Thị Phương",
+    father: "Ông Nguyễn Văn Truyền",
+    mother: "Bà Phạm Thị Phương",
     bank: {
       bankName: "Techcombank",
       accountName: "Nguyễn Quốc Bảo",
@@ -14,8 +14,8 @@ export const WEDDING_INFO = {
   bride: {
     name: "Mai Anh",
     fullName: "Nguyễn Mai Anh",
-    father: "Ông/ Mr. Nguyễn Quý Long",
-    mother: "Bà/ Mrs. Nguyễn Thị Ngọc Lan",
+    father: "Ông Nguyễn Quý Long",
+    mother: "Bà Nguyễn Thị Ngọc Lan",
     bank: {
       bankName: "Techcombank",
       accountName: "Nguyễn Mai Anh",

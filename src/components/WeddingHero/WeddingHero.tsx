@@ -11,8 +11,8 @@ type WeddingHeroProps = {
 export default function WeddingHero({
   brideName = WEDDING_INFO.bride.name.toUpperCase(),
   groomName = WEDDING_INFO.groom.name.toUpperCase(),
-  leftImage = ImgHeroBride,
-  rightImage = ImgHeroGroom,
+  leftImage = ImgHeroGroom,
+  rightImage = ImgHeroBride,
 }: WeddingHeroProps) {
   return (
     <div
@@ -109,6 +109,7 @@ export default function WeddingHero({
             flexWrap: "wrap",
           }}
         >
+          {/* Polaroid bên trái: Chú Rể */}
           <div
             style={{
               width: "320px",
@@ -130,7 +131,7 @@ export default function WeddingHero({
           >
             <img
               src={leftImage}
-              alt="Bride"
+              alt="Groom"
               style={{
                 width: "100%",
                 height: "420px",
@@ -139,6 +140,7 @@ export default function WeddingHero({
             />
           </div>
 
+          {/* Polaroid bên phải: Cô Dâu */}
           <div
             style={{
               width: "320px",
@@ -161,7 +163,7 @@ export default function WeddingHero({
           >
             <img
               src={rightImage}
-              alt="Groom"
+              alt="Bride"
               style={{
                 width: "100%",
                 height: "420px",

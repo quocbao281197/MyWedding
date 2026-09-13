@@ -1,0 +1,42 @@
+================================================================================
+            DANH SÁCH MAPPING HÌNH ẢNH WEBSITE ĐÁM CƯỚI (MYWEDDING)
+================================================================================
+Thư mục ảnh gốc: 
+  D:\Working_Bao\Đám cưới\Hình Cưới (Sau chỉnh sửa)
+  D:\Working_Bao\Đám cưới\Hình Cưới (Sau chỉnh sửa)\18.7 Quoc Bao Mai Anh\file le
+Cập nhật lần cuối: 13/09/2026
+
+--------------------------------------------------------------------------------
+1. CÁC SECTION CHÍNH TRÊN WEBSITE
+--------------------------------------------------------------------------------
+STT | Vị trí hiển thị trên Web          | Tên file trong source web       | Tên file ảnh gốc tương ứng
+----+-----------------------------------+---------------------------------+---------------------------
+01  | Background mở đầu (Countdown)     | src/assets/ImgWedding01.jpg     | VHH_7625.jpg (Bản gốc HD)
+02  | Section Save The Date             | src/assets/ImgSaveTheDate.jpg   | VHH_7293.jpg
+03  | Hero Card - Ảnh bên trái (Chú rể) | src/assets/ImgHeroGroom.jpg     | VHH_7279.jpg
+04  | Hero Card - Ảnh bên phải (Cô dâu) | src/assets/ImgHeroBride.jpg     | VHH_7588.jpg
+05  | Section Lời ngỏ (Intro Message)   | src/assets/ImgIntroMessage.jpg  | TLAT1479.jpg
+06  | Section Timeline (Lịch trình)     | src/assets/ImgTimeline.jpg      | VHH_7671.jpg
+07  | Section Thank You (Thiệp cảm ơn)  | src/assets/ImgThankYou.jpg      | TLAT1766.jpg
+08  | QR Chuyển khoản Chú Rể            | src/assets/QR_Groom.png         | QR_CR.PNG
+09  | QR Chuyển khoản Cô Dâu            | src/assets/QR_Bride.png         | QR_CD.PNG
+
+--------------------------------------------------------------------------------
+2. ALBUM HÌNH CƯỚI (12 ẢNH)
+(Cơ chế: Web hiển thị bản nén nhẹ mượt mà; khi Click phóng to sẽ gọi bản GỐC HD)
+--------------------------------------------------------------------------------
+STT | Tên hiển thị trong Album | File Thumbnail (nhẹ)           | File Full Zoom (HD)                 | File ảnh gốc tương ứng
+----+--------------------------+--------------------------------+-------------------------------------+-----------------------
+01  | Hình Album 01            | src/assets/album/Img01.jpg     | src/assets/album/full/Img01_full.jpg| VHH_7189.jpg
+02  | Hình Album 02            | src/assets/album/Img02.jpg     | src/assets/album/full/Img02_full.jpg| VHH_7858.jpg
+03  | Hình Album 03            | src/assets/album/Img03.jpg     | src/assets/album/full/Img03_full.jpg| VHH_7435.jpg
+04  | Hình Album 04            | src/assets/album/Img04.jpg     | src/assets/album/full/Img04_full.jpg| VHH_8024.jpg
+05  | Hình Album 05            | src/assets/album/Img05.jpg     | src/assets/album/full/Img05_full.jpg| VHH_8154.jpg
+06  | Hình Album 06            | src/assets/album/Img06.jpg     | src/assets/album/full/Img06_full.jpg| VHH_8234.jpg
+07  | Hình Album 07            | src/assets/album/Img07.jpg     | src/assets/album/full/Img07_full.jpg| VHH_8473.jpg
+08  | Hình Album 08            | src/assets/album/Img08.jpg     | src/assets/album/full/Img08_full.jpg| VHH_8526.jpg
+09  | Hình Album 09            | src/assets/album/Img09.jpg     | src/assets/album/full/Img09_full.jpg| VHH_8705.jpg
+10  | Hình Album 10            | src/assets/album/Img10.jpg     | src/assets/album/full/Img10_full.jpg| TLAT2019.jpg
+11  | Hình Album 11            | src/assets/album/Img11.jpg     | src/assets/album/full/Img11_full.jpg| TLAT1619.jpg
+12  | Hình Album 12            | src/assets/album/Img12.jpg     | src/assets/album/full/Img12_full.jpg| TLAT1793.jpg
+================================================================================
