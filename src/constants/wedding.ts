@@ -33,7 +33,7 @@ export const WEDDING_INFO = {
     titleFormatted: "29 THÁNG 11 NĂM 2026",
     dayText: "CHỦ NHẬT / SUNDAY",
     monthText: "THÁNG 11\nNOVEMBER",
-    lunarText: "(Âm lịch: Ngày 21 tháng 10 năm Ất Tỵ / Lunar date: October 21st, Year of the Snake)",
+    lunarText: "(Âm lịch: Ngày 21 tháng 10 năm Bính Ngọ / Lunar date: October 21st, Year of the Horse)",
   },
   ceremony: {
     time: "12:00",
