@@ -61,14 +61,14 @@ export default function WeddingHero({
 
         <div
           style={{
-            marginTop: "60px",
+            marginTop: "40px",
             color: "#8b6b47",
             lineHeight: 1.2,
           }}
         >
           <div
             style={{
-              fontSize: "50px",
+              fontSize: "36px",
               fontWeight: 400,
               letterSpacing: "3px",
             }}
@@ -78,10 +78,11 @@ export default function WeddingHero({
 
           <div
             style={{
-              fontSize: "110px",
+              fontSize: "64px",
               color: "#c9b9a5",
-              lineHeight: 0.7,
+              lineHeight: 0.8,
               fontStyle: "italic",
+              margin: "6px 0",
             }}
           >
             &
@@ -89,7 +90,7 @@ export default function WeddingHero({
 
           <div
             style={{
-              fontSize: "50px",
+              fontSize: "36px",
               fontWeight: 400,
               letterSpacing: "3px",
             }}
