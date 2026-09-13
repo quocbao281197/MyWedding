@@ -12,8 +12,16 @@ import ImgBgFlower from "./ImgBgFlower.png";
 import ImgBgLotus from "./ImgBgLotus.jpg";
 import QR_XD from "./QR_XD.png";
 import QR_HN from "./QR_HN.png";
+import QR_Groom from "./QR_Groom.png";
+import QR_Bride from "./QR_Bride.png";
 import IcLeft from "./IcLeft.svg";
 import IcRight from "./IcRight.svg";
+import ImgIntroMessage from "./ImgIntroMessage.jpg";
+import ImgThankYou from "./ImgThankYou.jpg";
+import ImgSaveTheDate from "./ImgSaveTheDate.jpg";
+import ImgHeroBride from "./ImgHeroBride.jpg";
+import ImgHeroGroom from "./ImgHeroGroom.jpg";
+import ImgTimeline from "./ImgTimeline.jpg";
 
 export {
   ImgWedding01,
@@ -29,8 +37,16 @@ export {
   ImgBgLotus,
   QR_XD,
   QR_HN,
+  QR_Groom,
+  QR_Bride,
   IcLeft,
   IcRight,
+  ImgIntroMessage,
+  ImgThankYou,
+  ImgSaveTheDate,
+  ImgHeroBride,
+  ImgHeroGroom,
+  ImgTimeline,
 };
 export * from "./album";
 export * from "./wedding-card";

@@ -1,4 +1,5 @@
 import { WEDDING_INFO, THEME } from "../../constants";
+import { ImgSaveTheDate } from "../../assets";
 
 type WeddingSaveTheDateProps = {
   title?: string;
@@ -11,7 +12,7 @@ export default function WeddingSaveTheDate({
   title = "QUYẾT ĐỊNH BÊN NHAU TRỌN ĐỜI.",
   subtitle = "Together, for a Lifetime.",
   date = WEDDING_INFO.date.dotFormatted,
-  imageUrl = "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop",
+  imageUrl = ImgSaveTheDate,
 }: WeddingSaveTheDateProps) {
   return (
     <div
@@ -60,10 +61,12 @@ export default function WeddingSaveTheDate({
 
           <div
             style={{
-              marginTop: "20px",
-              fontSize: "50px",
-              fontStyle: "italic",
-              fontFamily: "cursive",
+              marginTop: "24px",
+              fontSize: "56px",
+              fontFamily: THEME.fonts.script,
+              color: THEME.colors.primaryBronze,
+              textShadow: "0 2px 4px rgba(184, 151, 94, 0.15)",
+              lineHeight: 1.1,
             }}
           >
             Save the date
@@ -71,36 +74,67 @@ export default function WeddingSaveTheDate({
 
           <div
             style={{
-              marginTop: "5px",
-              fontSize: "45px",
-              letterSpacing: "4px",
-              fontWeight: 500,
+              marginTop: "8px",
+              fontSize: "36px",
+              letterSpacing: "6px",
+              fontWeight: 600,
+              color: THEME.colors.primaryBronze,
+              fontFamily: THEME.fonts.serif,
             }}
           >
             {date}
           </div>
         </div>
 
+        {/* Khung ảnh ngang phong cách Cinematic / Editorial Art Frame */}
         <div
           style={{
-            marginTop: "70px",
+            marginTop: "45px",
             display: "flex",
             justifyContent: "center",
+            position: "relative",
+            width: "100%",
           }}
         >
-          <img
-            src={imageUrl}
-            alt="Wedding"
+          <div
             style={{
+              position: "relative",
+              padding: "12px",
+              background: "#ffffff",
+              borderRadius: "20px",
+              boxShadow:
+                "0 20px 40px -15px rgba(127, 100, 67, 0.2), 0 0 0 1px rgba(184, 151, 94, 0.25)",
+              maxWidth: "560px",
               width: "100%",
-              maxWidth: "300px",
-              height: "300px",
-              objectFit: "cover",
-              border: "3px solid #b8975e",
-              borderRadius: "16px",
-              boxShadow: "0 8px 24px rgba(127, 100, 67, 0.15)",
+              boxSizing: "border-box",
             }}
-          />
+          >
+            {/* Đường chỉ vàng kim loại thanh mảnh bao quanh ảnh */}
+            <div
+              style={{
+                position: "absolute",
+                top: "18px",
+                bottom: "18px",
+                left: "18px",
+                right: "18px",
+                border: "1px solid rgba(184, 151, 94, 0.4)",
+                borderRadius: "14px",
+                pointerEvents: "none",
+                zIndex: 2,
+              }}
+            />
+            <img
+              src={imageUrl}
+              alt="Wedding"
+              style={{
+                width: "100%",
+                aspectRatio: "3 / 2",
+                objectFit: "cover",
+                borderRadius: "14px",
+                display: "block",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

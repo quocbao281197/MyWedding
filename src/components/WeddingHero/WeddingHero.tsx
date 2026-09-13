@@ -1,4 +1,5 @@
 import { WEDDING_INFO, THEME } from "../../constants";
+import { ImgHeroBride, ImgHeroGroom } from "../../assets";
 
 type WeddingHeroProps = {
   brideName?: string;
@@ -10,8 +11,8 @@ type WeddingHeroProps = {
 export default function WeddingHero({
   brideName = WEDDING_INFO.bride.name.toUpperCase(),
   groomName = WEDDING_INFO.groom.name.toUpperCase(),
-  leftImage = "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
-  rightImage = "https://images.unsplash.com/photo-1525258946800-98cfd641d0de?q=80&w=1200&auto=format&fit=crop",
+  leftImage = ImgHeroBride,
+  rightImage = ImgHeroGroom,
 }: WeddingHeroProps) {
   return (
     <div

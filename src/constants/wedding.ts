@@ -5,9 +5,9 @@ export const WEDDING_INFO = {
     father: "Ông/ Mr. Nguyễn Văn Truyền",
     mother: "Bà/ Mrs. Phạm Thị Phương",
     bank: {
-      bankName: "Vikki Digital Bank",
+      bankName: "Techcombank",
       accountName: "Nguyễn Quốc Bảo",
-      accountNumber: "906634281",
+      accountNumber: "19037872703014",
     },
     bio: "Chàng Lập trình viên đến từ TP.HCM ồn ào, náo nhiệt. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”",
   },
@@ -17,9 +17,9 @@ export const WEDDING_INFO = {
     father: "Ông/ Mr. Nguyễn Quý Long",
     mother: "Bà/ Mrs. Nguyễn Thị Ngọc Lan",
     bank: {
-      bankName: "Sacombank",
+      bankName: "Techcombank",
       accountName: "Nguyễn Mai Anh",
-      accountNumber: "070077928926",
+      accountNumber: "19036203498018",
     },
     bio: "",
   },

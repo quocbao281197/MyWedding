@@ -1,4 +1,5 @@
 import { WEDDING_INFO, THEME } from "../../constants";
+import { ImgTimeline } from "../../assets";
 
 type TimelineItem = {
   time: string;
@@ -13,7 +14,7 @@ type WeddingTimelineProps = {
 };
 
 export default function WeddingTimeline({
-  imageUrl = "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop",
+  imageUrl = ImgTimeline,
   timeline = WEDDING_INFO.timeline,
 }: WeddingTimelineProps) {
   return (

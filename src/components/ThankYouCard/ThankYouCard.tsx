@@ -1,5 +1,5 @@
 import { Image } from "antd";
-import { Img12 } from "../../assets";
+import { ImgThankYou } from "../../assets";
 import { WEDDING_INFO, THEME } from "../../constants";
 
 const ThankYouCard = () => {
@@ -8,7 +8,7 @@ const ThankYouCard = () => {
       <div className="bg-white p-8 sm:p-10 rounded-2xl border border-[#e5c07b]/40 shadow-xl w-full max-w-lg text-center">
         <div className="flex justify-center mb-5">
           <Image
-            src={Img12}
+            src={ImgThankYou}
             preview={false}
             alt="Wedding Couple"
             className="w-24 h-24 sm:w-28 sm:h-28 object-cover rounded-full border-4 border-[#b8975e] shadow-md"

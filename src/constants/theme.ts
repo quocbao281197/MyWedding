@@ -15,6 +15,7 @@ export const THEME = {
   fonts: {
     serif: "'Playfair Display', Georgia, serif",
     sans: "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    script: "'Great Vibes', cursive",
   },
   gradients: {
     textGold:

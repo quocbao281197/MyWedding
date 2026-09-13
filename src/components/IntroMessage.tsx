@@ -2,7 +2,7 @@ import { Typography, Image } from "antd";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
-import { Img03 } from "../assets";
+import { ImgIntroMessage } from "../assets";
 
 const { Title, Paragraph } = Typography;
 
@@ -43,7 +43,7 @@ const IntroMessage = () => {
 
         <div className="mt-8 flex justify-center">
           <Image
-            src={Img03}
+            src={ImgIntroMessage}
             alt="Ảnh cô dâu chú rể"
             className="rounded-xl shadow-md border-2 border-[#b8975e]/60 object-cover"
             width={300}

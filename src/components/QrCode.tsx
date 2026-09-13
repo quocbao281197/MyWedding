@@ -1,4 +1,4 @@
-import { QR_HN, QR_XD } from "../assets";
+import { QR_Groom, QR_Bride } from "../assets";
 import { WEDDING_INFO } from "../constants";
 
 function QrCode() {
@@ -17,9 +17,9 @@ function QrCode() {
         </div>
         <div className="flex justify-center mt-4">
           <img
-            src={QR_HN}
+            src={QR_Groom}
             alt="QR Code Chú Rể"
-            className="w-48 h-48 rounded-md shadow-md"
+            className="w-48 h-48 rounded-md shadow-md object-contain"
           />
         </div>
       </div>
@@ -34,9 +34,9 @@ function QrCode() {
         </div>
         <div className="flex justify-center mt-4">
           <img
-            src={QR_XD}
+            src={QR_Bride}
             alt="QR Code Cô Dâu"
-            className="w-48 h-48 rounded-md shadow-md"
+            className="w-48 h-48 rounded-md shadow-md object-contain"
           />
         </div>
       </div>
