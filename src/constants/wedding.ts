@@ -57,11 +57,6 @@ export const WEDDING_INFO = {
       title: "Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR",
       subtitle: "LỄ THÀNH HÔN / WEDDING CEREMONY",
     },
-    {
-      time: "12:30",
-      title: "Cùng nhau dùng tiệc và nâng ly chúc mừng CDCR",
-      subtitle: "KHAI TIỆC / BANQUET BEGINS",
-    },
   ],
   forms: {
     guestbookSheetId: "1y5mD-K-M4ePk5XceoIdS7rk9j6htpPGwxflm_3yV2jI",
