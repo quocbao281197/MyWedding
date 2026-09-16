@@ -30,7 +30,7 @@ const ThankYouCard = () => {
           Thank you!
         </div>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-sm mx-auto mb-5 font-sans">
-          Sự hiện diện và những lời chúc phúc của quý vị là niềm vinh hạnh và món quà ý nghĩa nhất dành cho chúng tôi trong ngày trọng đại.
+          Sự hiện diện và những lời chúc phúc của mọi người là niềm vinh hạnh và món quà ý nghĩa nhất dành cho chúng con/chúng em trong ngày trọng đại.
         </p>
         <div
           style={{
