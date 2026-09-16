@@ -27,18 +27,16 @@ const IntroMessage = () => {
           💌 Lời Ngỏ
         </Title>
         <Paragraph className="text-gray-700 text-base sm:text-lg whitespace-pre-line leading-relaxed font-serif">
-          Bằng tất cả sự trân trọng chúng con xin cám ơn tất cả những người thân
-          yêu, cô dì, chú bác, anh chị em, bạn bè và đồng nghiệp của tụi con/tụi
-          em.
+          Bằng tất cả sự trân trọng, chúng con/chúng em xin gửi lời cảm ơn chân
+          thành nhất đến ông bà, cô chú, cậu mợ, dì dượng, cùng toàn thể anh chị
+          em, bạn bè và đồng nghiệp thân yêu!
           {"\n\n"}
-          Tụi con/tụi em biết mọi người rất bận rộn, bận rộn với công việc, tất
-          bật với gia đình…
+          Dù cuộc sống luôn bận rộn với nhiều lo toan và công việc, nhận được sự
+          quan tâm cùng những lời chúc phúc ấm áp của mọi người dành cho ngày vui
+          của chúng con/chúng em chính là món quà quý giá nhất.
           {"\n\n"}
-          Nhưng vẫn giành chút thời gian quý báu và những sự yêu thương để chúc
-          mừng tình yêu và hạnh phúc của tụi con/tụi em.
-          {"\n\n"}
-          Một lần nữa xin chân thành cảm ơn tất cả mọi người và hẹn gặp mọi
-          người vào ngày trọng đại sắp tới !!!
+          Một lần nữa, chúng con/chúng em xin chân thành cảm ơn và hân hoan chờ
+          đón sự hiện diện của mọi người trong ngày trọng đại sắp tới.
         </Paragraph>
 
         <div className="mt-8 flex justify-center">

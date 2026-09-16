@@ -35,25 +35,30 @@ export default function WeddingHero({
         <div
           style={{
             color: "#8b6b47",
-            fontSize: "25px",
-            lineHeight: 1.8,
+            fontSize: "clamp(1.05rem, 3.8vw, 1.4rem)",
+            lineHeight: 1.7,
             textTransform: "uppercase",
             fontWeight: 500,
+            letterSpacing: "1.2px",
+            maxWidth: "680px",
+            margin: "0 auto",
+            padding: "0 10px",
           }}
         >
-          THÂN MỜI TỚI DỰ LỄ CƯỚI THÂN MẬT
+          TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH
           <br />
-          CỦA CHÚNG TÔI
+          TỚI DỰ BUỔI TIỆC CƯỚI THÂN MẬT CỦA CHÚNG TÔI
         </div>
 
         <div
           style={{
-            marginTop: "28px",
-            color: "#8b6b47",
-            fontSize: "20px",
-            fontWeight: 600,
+            marginTop: "16px",
+            color: "rgba(139, 107, 71, 0.8)",
+            fontSize: "clamp(0.75rem, 2.2vw, 0.95rem)",
+            fontWeight: 500,
             textTransform: "uppercase",
-            letterSpacing: "1px",
+            letterSpacing: "2px",
+            fontFamily: THEME.fonts.sans,
           }}
         >
           WE CORDIALLY INVITE YOU TO CELEBRATE OUR WEDDING
